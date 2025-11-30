@@ -1,0 +1,313 @@
+2025-11-28 11:30:27.576 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:30:27.576 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["find \"/home/ali/example config\" -type f -name \"*.conf\" -o -name \"*.sh\" -o -name \"*.rasi\" -o -name \"*.css\" -o -name \"*.md\"","head -30"]]
+2025-11-28 11:30:27.582 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands auto-approved [null]
+2025-11-28 11:30:27.582 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'find "/home/ali/example config" -type f -name "*.conf" -o -name "*.sh" -o -name "*.rasi" -o -name "*.css" -o -name "*.md"' is approved by allow list rule: find [null]
+2025-11-28 11:30:27.583 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'head -30' is approved by allow list rule: head [null]
+2025-11-28 11:30:27.583 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'find "/home/ali/example config" -type f -name "*.conf" -o -name "*.sh" -o -name "*.rasi" -o -name "*.css" -o -name "*.md" | head -30' has no matching auto approve entries [null]
+2025-11-28 11:30:56.050 [info] ToolTerminalCreator#createTerminal: Waiting 4998ms for shell integration []
+2025-11-28 11:30:56.156 [info] ToolTerminalCreator#_waitForShellIntegration: Rich SI available eventually []
+2025-11-28 11:30:56.163 [info] ToolTerminalCreator#_waitForShellIntegration: Promise complete, disposing store []
+2025-11-28 11:30:56.163 [info] ToolTerminalCreator#createTerminal: Waiting up to 2s for PromptInputModel state to change []
+2025-11-28 11:32:38.566 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:32:38.567 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["grep -n \"keyframes\\|@\" \"/home/ali/example config/.config/waybar/style.css\""]]
+2025-11-28 11:32:38.569 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands auto-approved [null]
+2025-11-28 11:32:38.569 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'grep -n "keyframes\|@" "/home/ali/example config/.config/waybar/style.css"' is approved by allow list rule: grep [null]
+2025-11-28 11:32:38.570 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'grep -n "keyframes\|@" "/home/ali/example config/.config/waybar/style.css"' has no matching auto approve entries [null]
+2025-11-28 11:32:44.669 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:32:44.670 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["sed -n '175,185p' \"/home/ali/example config/.config/waybar/style.css\"","cat -A"]]
+2025-11-28 11:32:44.672 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands NOT auto-approved [null]
+2025-11-28 11:32:44.672 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Command line NOT auto-approved [null]
+2025-11-28 11:32:44.673 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'sed -n '175,185p' "/home/ali/example config/.config/waybar/style.css"' has no matching auto approve entries [null]
+2025-11-28 11:32:44.674 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'cat -A' is approved by allow list rule: cat [null]
+2025-11-28 11:32:44.674 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'sed -n '175,185p' "/home/ali/example config/.config/waybar/style.css" | cat -A' has no matching auto approve entries [null]
+2025-11-28 11:32:49.212 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:32:49.212 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["wc -l \"/home/ali/example config/.config/waybar/style.css\""]]
+2025-11-28 11:32:49.212 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands auto-approved [null]
+2025-11-28 11:32:49.213 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'wc -l "/home/ali/example config/.config/waybar/style.css"' is approved by allow list rule: wc [null]
+2025-11-28 11:32:49.213 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'wc -l "/home/ali/example config/.config/waybar/style.css"' has no matching auto approve entries [null]
+2025-11-28 11:32:53.679 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:32:53.679 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["tail -20 \"/home/ali/example config/.config/waybar/style.css\""]]
+2025-11-28 11:32:53.679 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands auto-approved [null]
+2025-11-28 11:32:53.680 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'tail -20 "/home/ali/example config/.config/waybar/style.css"' is approved by allow list rule: tail [null]
+2025-11-28 11:32:53.681 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'tail -20 "/home/ali/example config/.config/waybar/style.css"' has no matching auto approve entries [null]
+2025-11-28 11:33:10.619 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:33:10.620 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["rm \"/home/ali/example config/.config/waybar/style.css\""]]
+2025-11-28 11:33:10.621 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Sub-command DENIED auto approval [null]
+2025-11-28 11:33:10.622 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'rm "/home/ali/example config/.config/waybar/style.css"' is denied by deny list rule: rm [null]
+2025-11-28 11:33:10.622 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'rm "/home/ali/example config/.config/waybar/style.css"' has no matching auto approve entries [null]
+2025-11-28 11:33:29.635 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:33:29.636 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["cd \"/home/ali/example config\"","waybar"]]
+2025-11-28 11:33:29.638 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands NOT auto-approved [null]
+2025-11-28 11:33:29.639 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Command line NOT auto-approved [null]
+2025-11-28 11:33:29.639 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'cd "/home/ali/example config"' is approved by allow list rule: cd [null]
+2025-11-28 11:33:29.640 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'waybar' has no matching auto approve entries [null]
+2025-11-28 11:33:29.640 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'cd "/home/ali/example config" && waybar' has no matching auto approve entries [null]
+2025-11-28 11:34:27.836 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:34:27.836 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["cat ~/.config/waybar/style.css","head -50"]]
+2025-11-28 11:34:27.836 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands auto-approved [null]
+2025-11-28 11:34:27.837 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'cat ~/.config/waybar/style.css' is approved by allow list rule: cat [null]
+2025-11-28 11:34:27.837 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'head -50' is approved by allow list rule: head [null]
+2025-11-28 11:34:27.837 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'cat ~/.config/waybar/style.css | head -50' has no matching auto approve entries [null]
+2025-11-28 11:34:33.472 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:34:33.472 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["sed -n '170,185p' ~/.config/waybar/style.css","cat -A"]]
+2025-11-28 11:34:33.473 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands NOT auto-approved [null]
+2025-11-28 11:34:33.473 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Command line NOT auto-approved [null]
+2025-11-28 11:34:33.473 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'sed -n '170,185p' ~/.config/waybar/style.css' has no matching auto approve entries [null]
+2025-11-28 11:34:33.474 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'cat -A' is approved by allow list rule: cat [null]
+2025-11-28 11:34:33.474 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'sed -n '170,185p' ~/.config/waybar/style.css | cat -A' has no matching auto approve entries [null]
+2025-11-28 11:34:40.036 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:34:40.037 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["cp \"/home/ali/example config/.config/waybar/style.css\" ~/.config/waybar/style.css"]]
+2025-11-28 11:34:40.037 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands NOT auto-approved [null]
+2025-11-28 11:34:40.038 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Command line NOT auto-approved [null]
+2025-11-28 11:34:40.039 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'cp "/home/ali/example config/.config/waybar/style.css" ~/.config/waybar/style.css' has no matching auto approve entries [null]
+2025-11-28 11:34:40.040 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'cp "/home/ali/example config/.config/waybar/style.css" ~/.config/waybar/style.css' has no matching auto approve entries [null]
+2025-11-28 11:34:45.756 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:34:45.757 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["waybar"]]
+2025-11-28 11:34:45.757 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands NOT auto-approved [null]
+2025-11-28 11:34:45.757 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Command line NOT auto-approved [null]
+2025-11-28 11:34:45.758 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'waybar' has no matching auto approve entries [null]
+2025-11-28 11:34:45.758 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'waybar' has no matching auto approve entries [null]
+2025-11-28 11:35:06.830 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:35:06.831 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["wc -l ~/.config/waybar/style.css"]]
+2025-11-28 11:35:06.833 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands auto-approved [null]
+2025-11-28 11:35:06.834 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'wc -l ~/.config/waybar/style.css' is approved by allow list rule: wc [null]
+2025-11-28 11:35:06.834 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'wc -l ~/.config/waybar/style.css' has no matching auto approve entries [null]
+2025-11-28 11:35:12.217 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:35:12.218 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["sed -n '175,185p' ~/.config/waybar/style.css"]]
+2025-11-28 11:35:12.219 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands NOT auto-approved [null]
+2025-11-28 11:35:12.220 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Command line NOT auto-approved [null]
+2025-11-28 11:35:12.220 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'sed -n '175,185p' ~/.config/waybar/style.css' has no matching auto approve entries [null]
+2025-11-28 11:35:12.221 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'sed -n '175,185p' ~/.config/waybar/style.css' has no matching auto approve entries [null]
+2025-11-28 11:35:26.417 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: Detected cwd ["file:///home/ali/example%20config"]
+2025-11-28 11:35:26.417 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [["file:///home/ali/example%20config/~/.config/waybar/style.css"]]
+2025-11-28 11:35:26.418 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["cat"]]
+2025-11-28 11:35:26.419 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands auto-approved [null]
+2025-11-28 11:35:26.420 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'cat' is approved by allow list rule: cat [null]
+2025-11-28 11:35:26.421 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'cat > ~/.config/waybar/style.css << 'EOF'
+/* ╔════════════════════════════════════════════════════════╗
+   ║         WAYBAR STYLING - BLUE THEME WITH BLUR          ║
+   ╚════════════════════════════════════════════════════════╝ */
+
+* {
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    min-height: 0;
+    font-family: "JetBrains Mono", "Noto Sans Arabic", "Symbols Nerd Font";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+window#waybar {
+    background: rgba(5, 5, 20, 0.7);
+    color: #00d9ff;
+    border: 1px solid rgba(0, 136, 255, 0.2);
+    border-radius: 8px;
+}
+
+#workspaces button.active {
+    background: linear-gradient(135deg, #0088ff, #0055aa);
+    color: #ffffff;
+    padding: 0 12px;
+    margin: 4px 3px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 136, 255, 0.4);
+}
+
+#workspaces button {
+    background: rgba(0, 136, 255, 0.1);
+    color: #00a0ff;
+    padding: 0 12px;
+    margin: 4px 3px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 136, 255, 0.25);
+    color: #00d9ff;
+    box-shadow: 0 0 8px rgba(0, 136, 255, 0.3);
+}
+
+#workspaces button.urgent {
+    background: rgba(255, 100, 100, 0.8);
+    color: #ffffff;
+}
+
+#window {
+    background: rgba(0, 136, 255, 0.1);
+    color: #00d9ff;
+    padding: 0 15px;
+    margin: 4px 6px;
+    border-radius: 6px;
+    border-left: 3px solid #0088ff;
+}
+
+#clock {
+    background: rgba(0, 100, 200, 0.15);
+    color: #00d9ff;
+    padding: 0 20px;
+    margin: 4px 0;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 136, 255, 0.3);
+    font-weight: 700;
+}
+
+#network {
+    background: rgba(0, 136, 255, 0.1);
+    color: #00d9ff;
+    padding: 0 12px;
+    margin: 4px 3px;
+    border-radius: 6px;
+    border-left: 3px solid #00cc00;
+}
+
+#network.disconnected {
+    background: rgba(255, 100, 100, 0.1);
+    color: #ff6464;
+    border-left: 3px solid #ff6464;
+}
+
+#pulseaudio {
+    background: rgba(0, 136, 255, 0.1);
+    color: #00d9ff;
+    padding: 0 12px;
+    margin: 4px 3px;
+    border-radius: 6px;
+    border-left: 3px solid #ff8800;
+}
+
+#pulseaudio.muted {
+    background: rgba(255, 100, 100, 0.1);
+    color: #ff6464;
+    border-left: 3px solid #ff6464;
+}
+
+#battery {
+    background: rgba(0, 136, 255, 0.1);
+    color: #00d9ff;
+    padding: 0 12px;
+    margin: 4px 3px;
+    border-radius: 6px;
+    border-left: 3px solid #00ff88;
+}
+
+#battery.charging {
+    color: #00ff88;
+    border-left: 3px solid #00ff88;
+}
+
+#battery.warning {
+    background: rgba(255, 200, 0, 0.1);
+    color: #ffcc00;
+    border-left: 3px solid #ffcc00;
+}
+
+#battery.critical {
+    background: rgba(255, 100, 100, 0.2);
+    color: #ff6464;
+    border-left: 3px solid #ff6464;
+}
+
+#backlight {
+    background: rgba(0, 136, 255, 0.1);
+    color: #00d9ff;
+    padding: 0 12px;
+    margin: 4px 3px;
+    border-radius: 6px;
+    border-left: 3px solid #ffcc00;
+}
+
+#power-profiles-daemon {
+    background: rgba(0, 136, 255, 0.1);
+    color: #00d9ff;
+    padding: 0 12px;
+    margin: 4px 3px;
+    border-radius: 6px;
+    border-left: 3px solid #cc00ff;
+}
+
+#tray {
+    background: rgba(0, 136, 255, 0.05);
+    padding: 0 12px;
+    margin: 4px 3px;
+    border-radius: 6px;
+    border-left: 3px solid #0088ff;
+}
+
+#tray > .passive {
+    color: #008899;
+}
+
+#tray > .active {
+    color: #00d9ff;
+}
+
+#tray > .needs-attention {
+    color: #ff6464;
+    animation: blink 1.5s infinite ease-in-out;
+}
+
+@keyframes blink {
+    0%, 100% {
+        color: #ff6464;
+    }
+    50% {
+        color: #ff9999;
+    }
+}
+
+#network:hover,
+#pulseaudio:hover,
+#battery:hover,
+#backlight:hover,
+#power-profiles-daemon:hover {
+    background: rgba(0, 136, 255, 0.2);
+    box-shadow: 0 0 8px rgba(0, 136, 255, 0.3);
+}
+
+tooltip {
+    background: rgba(5, 5, 20, 0.95);
+    border: 1px solid rgba(0, 136, 255, 0.4);
+    color: #00d9ff;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+tooltip label {
+    color: #00d9ff;
+}
+EOF
+' has no matching auto approve entries [null]
+2025-11-28 11:38:34.445 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:38:34.445 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["rm /home/ali/.config/waybar/config.jsonc"]]
+2025-11-28 11:38:34.447 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Sub-command DENIED auto approval [null]
+2025-11-28 11:38:34.449 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'rm /home/ali/.config/waybar/config.jsonc' is denied by deny list rule: rm [null]
+2025-11-28 11:38:34.451 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'rm /home/ali/.config/waybar/config.jsonc' has no matching auto approve entries [null]
+2025-11-28 11:38:37.315 [info] ToolTerminalCreator#createTerminal: Waiting 4999ms for shell integration []
+2025-11-28 11:38:37.417 [info] ToolTerminalCreator#_waitForShellIntegration: Rich SI available eventually []
+2025-11-28 11:38:37.422 [info] ToolTerminalCreator#_waitForShellIntegration: Promise complete, disposing store []
+2025-11-28 11:38:37.422 [info] ToolTerminalCreator#createTerminal: Waiting up to 2s for PromptInputModel state to change []
+2025-11-28 11:38:53.703 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:38:53.704 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["rm /home/ali/.config/waybar/style.css"]]
+2025-11-28 11:38:53.705 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Sub-command DENIED auto approval [null]
+2025-11-28 11:38:53.706 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'rm /home/ali/.config/waybar/style.css' is denied by deny list rule: rm [null]
+2025-11-28 11:38:53.708 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'rm /home/ali/.config/waybar/style.css' has no matching auto approve entries [null]
+2025-11-28 11:39:27.790 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:39:27.791 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["cp /home/ali/.config/waybar/config.jsonc /home/ali/Documents/waybar/config.jsonc","cp /home/ali/.config/waybar/style.css /home/ali/Documents/waybar/style.css"]]
+2025-11-28 11:39:27.795 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands NOT auto-approved [null]
+2025-11-28 11:39:27.797 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Command line NOT auto-approved [null]
+2025-11-28 11:39:27.806 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'cp /home/ali/.config/waybar/config.jsonc /home/ali/Documents/waybar/config.jsonc' has no matching auto approve entries [null]
+2025-11-28 11:39:27.807 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'cp /home/ali/.config/waybar/style.css /home/ali/Documents/waybar/style.css' has no matching auto approve entries [null]
+2025-11-28 11:39:27.807 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'cp /home/ali/.config/waybar/config.jsonc /home/ali/Documents/waybar/config.jsonc && cp /home/ali/.config/waybar/style.css /home/ali/Documents/waybar/style.css' has no matching auto approve entries [null]
+2025-11-28 11:42:16.210 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:42:16.211 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["wc -l /home/ali/.config/waybar/style.css"]]
+2025-11-28 11:42:16.211 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: All sub-commands auto-approved [null]
+2025-11-28 11:42:16.212 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'wc -l /home/ali/.config/waybar/style.css' is approved by allow list rule: wc [null]
+2025-11-28 11:42:16.212 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'wc -l /home/ali/.config/waybar/style.css' has no matching auto approve entries [null]
+2025-11-28 11:42:24.728 [info] RunInTerminalTool#CommandLineFileWriteAnalyzer: File writes detected [[]]
+2025-11-28 11:42:24.728 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Parsed sub-commands via bash grammar [["rm /home/ali/.config/waybar/style.css"]]
+2025-11-28 11:42:24.729 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: Sub-command DENIED auto approval [null]
+2025-11-28 11:42:24.729 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command 'rm /home/ali/.config/waybar/style.css' is denied by deny list rule: rm [null]
+2025-11-28 11:42:24.729 [info] RunInTerminalTool#CommandLineAutoApproveAnalyzer: - Command line 'rm /home/ali/.config/waybar/style.css' has no matching auto approve entries [null]

@@ -1,0 +1,179 @@
+/* ╔════════════════════════════════════════════════════════╗
+   ║        ROFI LAUNCHER THEME - BLUE WITH BLUR            ║
+   ╚════════════════════════════════════════════════════════╝ */
+
+* {
+    bg0: #050510;
+    bg1: #0a0a15;
+    bg2: #0f0f1e;
+    bg3: #1a1a2e;
+    bg4: #252533;
+    
+    fg0: #e0e6ff;
+    fg1: #00d9ff;
+    fg2: #0088ff;
+    fg3: #0055aa;
+    fg4: #003377;
+    
+    accent: #0088ff;
+    accent-dark: #0055aa;
+    accent-light: #00d9ff;
+    
+    border-color: #0066cc;
+    background-color: transparent;
+    text-color: @fg0;
+}
+
+/* Main window */
+window {
+    location: center;
+    anchor: center;
+    fullscreen: false;
+    transparency: "real";
+    width: 50%;
+    height: 60%;
+    
+    background-color: rgba(5, 5, 16, 0.9);
+    border: 2px solid @border-color;
+    border-radius: 12px;
+    
+    font: "JetBrains Mono 12";
+}
+
+/* Main box */
+mainbox {
+    background-color: transparent;
+    children: [ inputbar, listview, mode-switcher ];
+    spacing: 15px;
+    padding: 20px;
+}
+
+/* Input bar */
+inputbar {
+    enabled: true;
+    spacing: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgba(0, 136, 255, 0.1);
+    border: 1px solid @accent;
+    children: [ icon-search, entry, icon-paste ];
+}
+
+icon-search {
+    expand: false;
+    filename: "search";
+    size: 24px;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+entry {
+    enabled: true;
+    expand: true;
+    padding: 8px 12px;
+    background-color: transparent;
+    text-color: @accent-light;
+    cursor: text;
+    placeholder: "Search applications...";
+    placeholder-color: @fg3;
+}
+
+entry:focus {
+    background-color: rgba(0, 136, 255, 0.05);
+}
+
+icon-paste {
+    expand: false;
+    filename: "paste";
+    size: 16px;
+}
+
+/* List view */
+listview {
+    enabled: true;
+    columns: 1;
+    lines: 12;
+    cycle: true;
+    dynamic: true;
+    scrollbar: true;
+    layout: vertical;
+    spacing: 8px;
+    background-color: transparent;
+}
+
+scrollbar {
+    background-color: rgba(0, 136, 255, 0.05);
+    handle-color: @accent;
+    handle-width: 8px;
+    border-radius: 4px;
+}
+
+/* Elements */
+element {
+    enabled: true;
+    padding: 10px 12px;
+    spacing: 12px;
+    background-color: rgba(0, 136, 255, 0.05);
+    text-color: @fg0;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: 150ms ease-in-out;
+}
+
+element:hover {
+    background-color: rgba(0, 136, 255, 0.2);
+    text-color: @accent-light;
+    border: 1px solid @accent;
+    box-shadow: 0 0 12px rgba(0, 136, 255, 0.3);
+}
+
+element:focus {
+    background: linear-gradient(90deg, @accent, @accent-dark);
+    text-color: #ffffff;
+    border: 1px solid @accent-light;
+    box-shadow: 0 0 15px rgba(0, 136, 255, 0.5);
+}
+
+element:selected {
+    background: linear-gradient(90deg, @accent, @accent-dark);
+    text-color: #ffffff;
+}
+
+element-icon {
+    size: 32px;
+    vertical-align: 0.5;
+}
+
+element-text {
+    expand: true;
+    vertical-align: 0.5;
+}
+
+/* Mode switcher */
+mode-switcher {
+    background-color: transparent;
+    text-color: @fg0;
+    spacing: 8px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: rgba(0, 136, 255, 0.1);
+    text-color: @fg1;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 136, 255, 0.3);
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 255, 0.2);
+    border: 1px solid @accent;
+}
+
+button:active,
+button:selected {
+    background: @accent;
+    text-color: #ffffff;
+    border: 1px solid @accent-light;
+}

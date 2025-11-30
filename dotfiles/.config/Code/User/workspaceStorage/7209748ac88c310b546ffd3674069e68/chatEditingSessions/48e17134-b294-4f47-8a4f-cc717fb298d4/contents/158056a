@@ -1,0 +1,80 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "margin-top": 8,
+  "margin-left": 8,
+  "margin-right": 8,
+  "spacing": 4,
+  
+  "modules-left": ["custom/launcher", "hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["network", "pulseaudio", "cpu", "memory", "battery", "tray"],
+  
+  "custom/launcher": {
+    "format": "🚀",
+    "tooltip": false,
+    "on-click": "rofi -show drun",
+    "on-click-right": "rofi -show run"
+  },
+  
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "󰈹",
+      "2": "󰖟", 
+      "3": "󰊖",
+      "4": "󰙯",
+      "5": "󰝚",
+      "urgent": "󰗗",
+      "focused": "󰮯",
+      "default": "󰊠"
+    }
+  },
+  
+  "clock": {
+    "format": "⏰ {:%H:%M}",
+    "tooltip-format": "<tt>{calendar}</tt>"
+  },
+  
+  "cpu": {
+    "format": "🖥️ {usage}%",
+    "interval": 5,
+    "tooltip-format": "CPU Usage"
+  },
+  
+  "memory": {
+    "format": "💾 {percentage}%", 
+    "interval": 5,
+    "tooltip-format": "Memory Usage"
+  },
+  
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-charging": "🔌 {capacity}%",
+    "interval": 5,
+    "tooltip-format": "Battery: {capacity}%"
+  },
+  
+  "network": {
+    "format-wifi": "📡 {essid}",
+    "format-ethernet": "🌐 Connected",
+    "format-disconnected": "❌ Disconnected",
+    "tooltip-format": "Connected to {essid}\nIP: {ipaddr}/{cidr}"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "🔇 Muted", 
+    "format-icons": ["🔈", "🔉", "🔊"],
+    "scroll-step": 5,
+    "tooltip-format": "Volume: {volume}%"
+  },
+  
+  "tray": {
+    "spacing": 4
+  }
+}

@@ -1,0 +1,95 @@
+/* Rofi configuration matching Waybar theme - No blur version */
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    window-format: "{w}  {i}  {t}";
+}
+
+* {
+    /* Colors from your Waybar */
+    background-color: rgba(30, 30, 46, 0.95);
+    foreground-color: #cdd6f4;
+    border-color: #89b4fa;
+    selected-background-color: rgba(137, 180, 250, 0.3);
+    selected-foreground-color: #89b4fa;
+    alternate-background-color: rgba(68, 71, 90, 0.3);
+    active-background-color: rgba(137, 180, 250, 0.2);
+    urgent-background-color: rgba(243, 139, 168, 0.3);
+    urgent-foreground-color: #f38ba8;
+    
+    /* Font */
+    font: "JetBrains Mono Nerd Font 12px";
+    
+    /* Sizing */
+    spacing: 2px;
+    padding: 8px;
+    margin: 0px;
+    width: 35%;
+}
+
+window {
+    background-color: rgba(30, 30, 46, 0.95);
+    location: center;
+    anchor: center;
+    border-radius: 16px;
+    border: 1px solid rgba(137, 180, 250, 0.3);
+    padding: 12px;
+}
+
+mainbox {
+    spacing: 12px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+inputbar {
+    spacing: 12px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: rgba(88, 91, 112, 0.3);
+    border: 1px solid rgba(137, 180, 250, 0.2);
+}
+
+prompt {
+    text-color: #89b4fa;
+    padding: 0px 4px 0px 0px;
+}
+
+entry {
+    text-color: #cdd6f4;
+    placeholder: "Search...";
+    placeholder-color: #6c7086;
+}
+
+listview {
+    fixed-height: true;
+    dynamic: true;
+    scrollbar: false;
+    spacing: 4px;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+element {
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-color: #cdd6f4;
+}
+
+element selected {
+    background-color: rgba(137, 180, 250, 0.2);
+    text-color: #89b4fa;
+    border: 1px solid rgba(137, 180, 250, 0.3);
+}
+
+element-text {
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 24px;
+    padding: 0px 8px 0px 0px;
+}

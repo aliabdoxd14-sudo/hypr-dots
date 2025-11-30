@@ -1,0 +1,111 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "margin-top": 10,
+  "margin-left": 10,
+  "margin-right": 10,
+  "margin-bottom": 0,
+  "spacing": 8,
+  
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["network", "cpu", "memory", "pulseaudio", "battery"],
+  
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "persistent-workspaces": {
+      "*": [1, 2, 3, 4, 5]
+    },
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "urgent": "",
+      "focused": "",
+      "default": ""
+    }
+  },
+  
+  "clock": {
+    "format": " {:%H:%M:%S}",
+    "interval": 1,
+    "tooltip-format": "<tt><big>{calendar}</big></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#7aa89f'><b>{}</b></span>",
+        "days": "<span color='#dcd7ba'><b>{}</b></span>",
+        "weeks": "<span color='#727169'><b>W{}</b></span>",
+        "weekdays": "<span color='#e6c384'><b>{}</b></span>",
+        "today": "<span color='#ffffff' background='#7aa89f'><b><u>{}</u></b></span>"
+      }
+    }
+  },
+  
+  "network": {
+    "format": "",
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "  Connected",
+    "format-disconnected": "睊 Disconnected",
+    "tooltip-format": "{ifname}\n{ipaddr}/{cidr}",
+    "tooltip-format-wifi": "{ifname} @ {essid}\nIP: {ipaddr}/{cidr}\nSignal: {signalStrength}%",
+    "tooltip-format-ethernet": "{ifname}\nIP: {ipaddr}/{cidr}",
+    "on-click": "nm-applet"
+  },
+  
+  "cpu": {
+    "format": "  {usage}%",
+    "interval": 1,
+    "tooltip": true,
+    "tooltip-format": "CPU: {usage}%"
+  },
+  
+  "memory": {
+    "format": "  {used:.1f}GB",
+    "interval": 1,
+    "tooltip": true,
+    "tooltip-format": "Memory: {used:.1f}GB / {total:.1f}GB ({percentage}%)"
+  },
+  
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " Muted",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "󰂑",
+      "headset": "󰂑",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    },
+    "scroll-step": 5,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+    "tooltip": true,
+    "tooltip-format": "Volume: {volume}%"
+  },
+  
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", "", "", "", "", "", ""],
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "tooltip": true,
+    "tooltip-format": "Battery: {capacity}%\nTime: {time}"
+  }
+}

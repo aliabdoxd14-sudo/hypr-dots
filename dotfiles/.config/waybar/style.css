@@ -1,0 +1,100 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono Nerd Font", "Iosevka Nerd Font", "Fira Code", sans-serif;
+    font-size: 11px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(30, 30, 46, 0.85);
+    color: #cdd6f4;
+    border-bottom: none;
+    border-radius: 14px;
+    margin: 6px 6px 0px 6px;
+}
+
+/* Floating shadow effect for the bar only */
+window#waybar {
+    box-shadow: 
+        0 4px 16px 0 rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Application launcher - no background */
+#custom-launcher {
+    padding: 0 8px;
+    margin: 0 8px 0 12px;
+    background: transparent;
+    color: #89b4fa;
+    font-size: 16px;
+}
+
+#custom-launcher:hover {
+    color: #cdd6f4;
+}
+
+/* Workspaces - no background */
+#workspaces {
+    background: transparent;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    background: transparent;
+    color: #6c7086;
+    margin: 0 2px;
+    transition: all 0.2s ease-in-out;
+    font-size: 12px;
+}
+
+#workspaces button.focused {
+    background: transparent;
+    color: #89b4fa;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: #cdd6f4;
+}
+
+/* All modules - no background, just text/icons */
+#clock, #cpu, #memory, #battery, #pulseaudio, #tray {
+    padding: 0 8px;
+    margin: 0 4px;
+    background: transparent;
+    color: #cdd6f4;
+    border-radius: 0;
+}
+
+#clock {
+    color: #89b4fa;
+    font-weight: bold;
+}
+
+#battery.charging {
+    color: #a6e3a1;
+}
+
+#battery.warning:not(.charging) {
+    color: #f9e2af;
+}
+
+#battery.critical:not(.charging) {
+    color: #f38ba8;
+    animation: blink 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        color: #ff5555;
+    }
+}
+
+#pulseaudio.muted {
+    color: #f38ba8;
+}
+
+#tray {
+    background: transparent;
+}

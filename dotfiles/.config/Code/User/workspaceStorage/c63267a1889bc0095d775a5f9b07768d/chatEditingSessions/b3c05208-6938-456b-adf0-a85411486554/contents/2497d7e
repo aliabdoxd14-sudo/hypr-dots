@@ -1,0 +1,26 @@
+# Kitty color scheme: Blue Hyperland
+foreground #cfe8ff
+background #0b1220
+
+cursor #8fc9ff
+
+selection_foreground #00111b
+selection_background #3b4b60
+
+color0  #0b1220
+color1  #ff6b6b
+color2  #51cf66
+color3  #ffd166
+color4  #4da6ff
+color5  #d699ff
+color6  #60e6ff
+color7  #cfe8ff
+
+color8  #1a2430
+color9  #ff9b9b
+color10 #8bf59a
+color11 #ffe89f
+color12 #8fc9ff
+color13 #e5c8ff
+color14 #9ff3ff
+color15 #ffffff

@@ -1,0 +1,97 @@
+// ╔════════════════════════════════════════════════════════╗
+// ║    HYPRLAND WORKSPACES & LAYOUT TEMPLATES              ║
+// ║              Suggested Workspace Setup                 ║
+// ╚════════════════════════════════════════════════════════╝
+
+/* 
+ * Recommended workspace setup:
+ * 
+ * Workspace 1: Code/Development
+ *   - VSCode, Vim, Terminals
+ *   - Layout: Dwindle (master-detail view)
+ * 
+ * Workspace 2: Web Browsing
+ *   - Firefox, Chrome
+ *   - Layout: Maximized
+ * 
+ * Workspace 3: Communication
+ *   - Discord, Telegram, Email
+ *   - Layout: Master
+ * 
+ * Workspace 4: Entertainment
+ *   - Spotify, VLC, YouTube
+ *   - Layout: Floating
+ * 
+ * Workspace 5: Files/Documents
+ *   - File manager, Documents, PDF readers
+ *   - Layout: Master
+ * 
+ * Workspace 6: Creative Work
+ *   - GIMP, Blender, Inkscape
+ *   - Layout: Master
+ * 
+ * Workspace 7: System Tools
+ *   - Settings, Process Monitor, Terminal
+ *   - Layout: Dwindle
+ * 
+ * Workspace 8-10: Extra/Gaming/Personal
+ *   - Custom applications
+ *   - Layout: User preference
+ */
+
+/* Configuration for Hyprland workspaces: */
+
+# Add to hyprland.conf:
+
+# Workspace naming and ordering
+workspace = 1, name:Dev, rounding:true
+workspace = 2, name:Web, rounding:true
+workspace = 3, name:Chat, rounding:true
+workspace = 4, name:Music, rounding:true
+workspace = 5, name:Files, rounding:true
+workspace = 6, name:Creative, rounding:true
+workspace = 7, name:System, rounding:true
+workspace = 8, name:Extra, rounding:true
+workspace = 9, name:Game, rounding:false
+workspace = 10, name:Virtual, rounding:true
+
+# Workspace-specific keybinds
+bind = $mainMod, F1, workspace, 1
+bind = $mainMod, F2, workspace, 2
+bind = $mainMod, F3, workspace, 3
+bind = $mainMod, F4, workspace, 4
+bind = $mainMod, F5, workspace, 5
+bind = $mainMod, F6, workspace, 6
+bind = $mainMod, F7, workspace, 7
+bind = $mainMod, F8, workspace, 8
+bind = $mainMod, F9, workspace, 9
+bind = $mainMod, F10, workspace, 10
+
+# Layout-specific workspace rules
+# (Add to window-rules.conf)
+
+# Development workspace - Dwindle layout
+windowrulev2 = workspace 1, class:^(code|codium|vim|neovim|gedit)$
+
+# Web workspace - Master layout
+windowrulev2 = workspace 2, class:^(firefox|chromium|google-chrome)$
+
+# Communication - Master layout
+windowrulev2 = workspace 3, class:^(discord|telegram|thunderbird)$
+
+# Music/Media - Floating
+windowrulev2 = workspace 4, class:^(spotify|vlc|mpv)$
+windowrulev2 = float, workspace:4
+
+# Files - Master layout
+windowrulev2 = workspace 5, class:^(nautilus|thunar|dolphin)$
+
+# Creative - Floating
+windowrulev2 = workspace 6, class:^(gimp|blender|inkscape)$
+
+# System - Dwindle
+windowrulev2 = workspace 7, class:^(gnome-system-monitor|htop)$
+
+# Gaming - No animations
+windowrulev2 = workspace 9, class:^(steam)$
+windowrulev2 = noanim, workspace:9

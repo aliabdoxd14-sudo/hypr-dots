@@ -1,0 +1,248 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# hyprland-offline-installer
+# An interactive, dialog-based offline installer for the Hyprland live image.
+# This script is intentionally linear and verbose with clear steps and rollback
+# checkpoints. It assumes a local package repository is available at /hyprland_repo
+# on the live environment (created during build). It also supports command-line
+# flags for unattended defaults: --locale, --keymap, --timezone.
+
+TMP_LOG="/tmp/hyprland-installer.log"
+echo "Starting hyprland-offline-installer" > "$TMP_LOG"
+
+die(){ echo "$*" | tee -a "$TMP_LOG"; exit 1; }
+
+usage(){
+  cat <<EOF
+Usage: $0 [--locale <LOCALE>] [--keymap <KEYMAP>] [--timezone <TZ>]
+EOF
+  exit 1
+}
+
+LOCALE_ARG=""
+KEYMAP_ARG=""
+TZ_ARG=""
+
+while [ "$#" -gt 0 ]; do
+  case "$1" in
+    --locale) LOCALE_ARG="$2"; shift 2;;
+    --keymap) KEYMAP_ARG="$2"; shift 2;;
+    --timezone) TZ_ARG="$2"; shift 2;;
+    -h|--help) usage;;
+    *) break;;
+  esac
+done
+
+# check for dialog
+if ! command -v dialog >/dev/null 2>&1; then
+  echo "dialog is required for the TUI. Install it in the live image." | tee -a "$TMP_LOG"
+  exit 1
+fi
+
+TEMPFILE="/tmp/hyprland.installer.tmp"
+
+show_msg(){ dialog --title "$1" --msgbox "$2" 12 60; }
+
+ask_keyboard(){
+  if [ -n "$KEYMAP_ARG" ]; then
+    loadkeys "$KEYMAP_ARG" || true
+    echo "$KEYMAP_ARG" > /tmp/inst-keymap
+    return
+  fi
+  dialog --menu "Choose keymap" 12 50 6 \
+    us "US" \
+    uk "UK" \
+    de "German" \
+    fr "French" \
+    ar "Arabic" 2> "$TEMPFILE"
+  rc=$?
+  [ $rc -ne 0 ] && die "Cancelled"
+  KEY=$(cat "$TEMPFILE")
+  case "$KEY" in
+    us) loadkeys us; echo us > /tmp/inst-keymap;;
+    uk) loadkeys uk; echo uk > /tmp/inst-keymap;;
+    de) loadkeys de; echo de > /tmp/inst-keymap;;
+    fr) loadkeys fr; echo fr > /tmp/inst-keymap;;
+    ar) loadkeys ar; echo ar > /tmp/inst-keymap;;
+  esac
+}
+
+ask_locale(){
+  if [ -n "$LOCALE_ARG" ]; then
+    echo "$LOCALE_ARG" > /tmp/inst-locale
+    return
+  fi
+  dialog --menu "Choose locale" 14 60 6 \
+    en_US.UTF-8 "English (US)" \
+    en_GB.UTF-8 "English (UK)" \
+    fr_FR.UTF-8 "French" \
+    de_DE.UTF-8 "German" \
+    ar_SA.UTF-8 "Arabic (Saudi)" 2> "$TEMPFILE"
+  rc=$?
+  [ $rc -ne 0 ] && die "Cancelled"
+  cat "$TEMPFILE" > /tmp/inst-locale
+}
+
+ask_timezone(){
+  if [ -n "$TZ_ARG" ]; then
+    echo "$TZ_ARG" > /tmp/inst-tz
+    return
+  fi
+  dialog --inputbox "Enter timezone (e.g. Europe/Berlin or Asia/Riyadh):" 8 60 Asia/Riyadh 2> "$TEMPFILE"
+  rc=$?
+  [ $rc -ne 0 ] && die "Cancelled"
+  cat "$TEMPFILE" > /tmp/inst-tz
+}
+
+ask_hostname_user(){
+  dialog --inputbox "Hostname for the installed system:" 8 40 hyprland 2> "$TEMPFILE" || die "Cancelled"
+  cat "$TEMPFILE" > /tmp/inst-hostname
+  dialog --inputbox "Username to create (non-root):" 8 40 user 2> "$TEMPFILE" || die "Cancelled"
+  cat "$TEMPFILE" > /tmp/inst-username
+  dialog --passwordbox "Password for the new user (will be set on installed system):" 8 40 2> "$TEMPFILE" || die "Cancelled"
+  cat "$TEMPFILE" > /tmp/inst-user-pass
+}
+
+choose_disk(){
+  # List candidate disks (sd*, nvme*)
+  mapfile -t DISKS < <(lsblk -dn -o NAME,TYPE | awk '$2=="disk"{print "/dev/"$1}')
+  if [ ${#DISKS[@]} -eq 0 ]; then
+    die "No block devices found"
+  fi
+  i=1; menu=""
+  for d in "${DISKS[@]}"; do
+    size=$(lsblk -dn -o SIZE "$d")
+    menu+="$d" "Size: $size" \
+  done
+  dialog --menu "Choose target disk (all data will be destroyed)" 14 60 8 ${DISKS[@]} 2> "$TEMPFILE" || die "Cancelled"
+  cat "$TEMPFILE" > /tmp/inst-disk
+}
+
+confirm_danger(){
+  dialog --yesno "About to format ${1} and create partitions - THIS WILL ERASE ALL DATA ON THE SELECTED DISK. Type YES to proceed." 12 60
+  rc=$?
+  [ $rc -ne 0 ] && die "User aborted"
+}
+
+do_partition_and_format(){
+  DISK=$(cat /tmp/inst-disk)
+  # Guided: GPT, 512MB EFI, rest ext4
+  confirm_danger "$DISK"
+  parted -s "$DISK" mklabel gpt
+  parted -s "$DISK" mkpart primary fat32 1MiB 513MiB
+  parted -s "$DISK" mkpart primary ext4 513MiB 100%
+  parted -s "$DISK" set 1 esp on
+  sleep 1
+  # Resolve partitions names (nvme vs sdX)
+  if [[ "$DISK" =~ nvme ]]; then
+    EFI="${DISK}p1"
+    ROOT="${DISK}p2"
+  else
+    EFI="${DISK}1"
+    ROOT="${DISK}2"
+  fi
+  mkfs.fat -F32 "$EFI"
+  mkfs.ext4 -F "$ROOT"
+  mkdir -p /mnt
+  mount "$ROOT" /mnt
+  mkdir -p /mnt/boot/efi
+  mount "$EFI" /mnt/boot/efi
+}
+
+configure_pacman_localrepo_in_chroot(){
+  # Append local repo to pacman.conf inside the target root to allow offline install
+  cat >> /mnt/etc/pacman.conf <<'EOF'
+[hyprland_iso]
+Server = file:///hyprland_repo
+SigLevel = Optional TrustAll
+EOF
+}
+
+install_base_system(){
+  # Use pacstrap with local repo; pacstrap will need to find packages.
+  # Ensure the live environment has /hyprland_repo available (built into ISO)
+  if [ ! -d /hyprland_repo ]; then
+    show_msg "Repository not found" "Local package repository '/hyprland_repo' not found on the live image. Installation cannot proceed offline."
+    die "Missing /hyprland_repo"
+  fi
+
+  # Copy pacman config to target and add repo
+  mkdir -p /mnt/etc
+  cp /etc/pacman.conf /mnt/etc/pacman.conf
+  configure_pacman_localrepo_in_chroot
+
+  # Use pacstrap to install packages from the ISO-local repo
+  pacstrap -C /mnt/etc/pacman.conf /mnt base base-devel linux linux-firmware "@core"
+  # Also install packages listed in a packages list file if present
+  if [ -f /hyprland_packages_list.txt ]; then
+    PKGS=$(cat /hyprland_packages_list.txt | tr '\n' ' ')
+    pacstrap -C /mnt/etc/pacman.conf /mnt $PKGS
+  fi
+}
+
+finalize_install(){
+  # fstab
+  genfstab -U /mnt >> /mnt/etc/fstab
+
+  # chroot and set hostname, locale, timezone, user
+  HOSTNAME=$(cat /tmp/inst-hostname)
+  LOCALE=$(cat /tmp/inst-locale)
+  TZ=$(cat /tmp/inst-tz)
+  UNAME=$(cat /tmp/inst-username)
+  UPASS=$(cat /tmp/inst-user-pass)
+
+  arch-chroot /mnt /bin/bash -e <<EOF
+set -e
+echo "$HOSTNAME" > /etc/hostname
+ln -sf /usr/share/zoneinfo/$TZ /etc/localtime || true
+echo "$LOCALE" > /etc/locale.conf
+sed -n '1p' /etc/locale.gen >/dev/null 2>&1 || true
+if ! grep -q "^$LOCALE" /etc/locale.gen 2>/dev/null; then
+  echo "$LOCALE UTF-8" >> /etc/locale.gen
+fi
+locale-gen || true
+mkinitcpio -P || true
+
+# Install grub for UEFI
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB || true
+grub-mkconfig -o /boot/grub/grub.cfg || true
+
+# create user and set password
+useradd -m -G wheel -s /bin/bash "$UNAME" || true
+echo "$UNAME:$UPASS" | chpasswd || true
+echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+# Enable NetworkManager
+systemctl enable NetworkManager
+
+EOF
+}
+
+copy_dotfiles_to_installed(){
+  if [ -d /usr/share/hyprland-dotfiles ]; then
+    cp -a /usr/share/hyprland-dotfiles /mnt/usr/share/ || true
+    arch-chroot /mnt /usr/local/bin/install_end4_dotfiles.sh / || true
+  fi
+}
+
+cleanup_and_finish(){
+  # Disable the installer service inside installed system so it doesn't auto-run
+  arch-chroot /mnt /bin/bash -c 'systemctl disable hyprland-installer.service || true'
+  umount -R /mnt || true
+  show_msg "Installation finished" "Installation complete. You may reboot into your new system."
+}
+
+# Main flow
+show_msg "Welcome" "Welcome to the Hyprland offline installer. The installer will guide you through keyboard, locale, timezone, partitioning and a minimal installation from the ISO-local repo."
+ask_keyboard
+ask_locale
+ask_timezone
+ask_hostname_user
+choose_disk
+do_partition_and_format
+install_base_system
+finalize_install
+copy_dotfiles_to_installed
+cleanup_and_finish
+
+exit 0

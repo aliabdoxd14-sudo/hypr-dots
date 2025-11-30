@@ -1,0 +1,69 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "margin-top": 6,
+  "margin-left": 6,
+  "margin-right": 6,
+  "spacing": 3,
+  
+  "modules-left": ["custom/launcher", "hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "cpu", "memory", "battery", "tray"],
+  
+  "custom/launcher": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "rofi -show drun",
+    "on-click-right": "rofi -show run"
+  },
+  
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "󰈹",
+      "2": "󰖟", 
+      "3": "󰊖",
+      "4": "󰙯",
+      "5": "󰝚",
+      "urgent": "󰗗",
+      "focused": "󰮯",
+      "default": "󰊠"
+    }
+  },
+  
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "<tt>{calendar}</tt>"
+  },
+  
+  "cpu": {
+    "format": "󰻠 {usage}%",
+    "interval": 5
+  },
+  
+  "memory": {
+    "format": "󰍛 {percentage}%", 
+    "interval": 5
+  },
+  
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-charging": "󰂄 {capacity}%",
+    "interval": 5
+  },
+  
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁 Muted", 
+    "format-icons": ["󰕿", "󰖀", "󰕾"],
+    "scroll-step": 5
+  },
+  
+  "tray": {
+    "spacing": 4
+  }
+}

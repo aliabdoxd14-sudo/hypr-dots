@@ -1,0 +1,140 @@
+2025-11-29 15:47:55.463 [info] [main] Log level: Info
+2025-11-29 15:47:55.463 [info] [main] Validating found git in: "git"
+2025-11-29 15:47:55.463 [info] [main] Using git "2.52.0" from "git"
+2025-11-29 15:47:55.463 [info] [Model][doInitialScan] Initial repository scan started
+2025-11-29 15:47:55.463 [info] > git rev-parse --show-toplevel [58ms]
+2025-11-29 15:47:55.463 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 15:47:55.463 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-11-29 15:47:56.799 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-29 15:47:56.799 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 15:48:18.511 [info] > git rev-parse --show-toplevel [15ms]
+2025-11-29 15:48:18.511 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 15:48:21.649 [info] > git rev-parse --show-toplevel [293ms]
+2025-11-29 15:48:21.649 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 15:48:35.287 [info] > git rev-parse --show-toplevel [21ms]
+2025-11-29 15:48:35.287 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 15:49:01.665 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-29 15:49:01.665 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 15:49:19.278 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-29 15:49:19.278 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 15:49:20.638 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-29 15:49:20.638 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 15:49:55.086 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-29 15:49:55.087 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 15:49:57.330 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-29 15:49:57.330 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 16:14:11.605 [info] [main] Log level: Info
+2025-11-29 16:14:11.606 [info] [main] Validating found git in: "git"
+2025-11-29 16:14:11.606 [info] [main] Using git "2.52.0" from "git"
+2025-11-29 16:14:11.606 [info] [Model][doInitialScan] Initial repository scan started
+2025-11-29 16:14:11.606 [info] > git rev-parse --show-toplevel [369ms]
+2025-11-29 16:14:11.606 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 16:14:11.626 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-29 16:14:11.626 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 16:14:11.654 [info] > git rev-parse --show-toplevel [12ms]
+2025-11-29 16:14:11.654 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 16:14:11.682 [info] > git rev-parse --show-toplevel [12ms]
+2025-11-29 16:14:11.683 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 16:14:11.708 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-29 16:14:11.708 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 16:14:11.722 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-11-29 16:14:13.540 [info] > git rev-parse --show-toplevel [605ms]
+2025-11-29 16:14:13.541 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 17:03:50.585 [info] > git rev-parse --show-toplevel [8ms]
+2025-11-29 17:03:50.585 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 17:04:02.677 [info] > git rev-parse --show-toplevel [6ms]
+2025-11-29 17:04:02.677 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 17:04:04.123 [info] > git rev-parse --show-toplevel [7ms]
+2025-11-29 17:04:04.123 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 17:04:06.316 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-29 17:04:06.316 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 17:04:07.410 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-29 17:04:07.410 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 17:04:08.138 [info] > git rev-parse --show-toplevel [9ms]
+2025-11-29 17:04:08.138 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-11-29 17:05:10.287 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-29 17:05:10.306 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [4ms]
+2025-11-29 17:05:10.338 [info] [Model][openRepository] Opened repository (path): /home/ali/myarchiso/dots-hyprland
+2025-11-29 17:05:10.338 [info] [Model][openRepository] Opened repository (real path): /home/ali/myarchiso/dots-hyprland
+2025-11-29 17:05:10.338 [info] [Model][openRepository] Opened repository (kind): repository
+2025-11-29 17:05:10.360 [info] > git config --get commit.template [5ms]
+2025-11-29 17:05:10.370 [warning] [Git][getHEAD] Failed to parse HEAD file: Repository is using reftable format.
+2025-11-29 17:05:10.374 [info] > git symbolic-ref --short HEAD [3ms]
+2025-11-29 17:05:10.374 [info] fatal: No such ref: HEAD
+2025-11-29 17:05:10.386 [info] > git rev-parse HEAD [3ms]
+2025-11-29 17:05:10.386 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-11-29 17:05:10.407 [info] > git status -z -uall [12ms]
+2025-11-29 17:05:10.407 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-11-29 17:05:10.438 [info] > git symbolic-ref --short HEAD [13ms]
+2025-11-29 17:05:10.438 [info] fatal: No such ref: HEAD
+2025-11-29 17:05:10.446 [info] > git config --get commit.template [9ms]
+2025-11-29 17:05:10.447 [info] > git rev-parse HEAD [2ms]
+2025-11-29 17:05:10.447 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-11-29 17:05:10.463 [info] > git status -z -uall [9ms]
+2025-11-29 17:05:10.464 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-11-29 17:05:10.900 [info] > git check-ignore -v -z --stdin [2ms]
+2025-11-29 17:05:13.200 [info] > git symbolic-ref --short HEAD [10ms]
+2025-11-29 17:05:13.200 [info] fatal: No such ref: HEAD
+2025-11-29 17:05:13.216 [info] > git rev-parse HEAD [3ms]
+2025-11-29 17:05:13.216 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-11-29 17:05:13.216 [info] > git config --get commit.template [16ms]
+2025-11-29 17:05:13.247 [info] > git status -z -uall [19ms]
+2025-11-29 17:05:13.249 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-11-29 17:05:23.515 [info] > git symbolic-ref --short HEAD [18ms]
+2025-11-29 17:05:23.533 [info] > git config --get commit.template [19ms]
+2025-11-29 17:05:23.535 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-11-29 17:05:23.549 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ali/myarchiso/dots-hyprland/.git/refs/remotes/origin/main'
+2025-11-29 17:05:23.551 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-11-29 17:05:23.577 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-11-29 17:05:23.613 [info] > git status -z -uall [51ms]
+2025-11-29 17:05:23.650 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [10ms]
+2025-11-29 17:05:23.666 [info] > git config --get --local branch.main.vscode-merge-base [2ms]
+2025-11-29 17:05:23.666 [warning] [Git][config] git config failed: Failed to execute git
+2025-11-29 17:05:23.679 [info] > git reflog main --grep-reflog=branch: Created from *. [5ms]
+2025-11-29 17:05:23.688 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [2ms]
+2025-11-29 17:05:23.699 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [2ms]
+2025-11-29 17:05:23.710 [info] > git config --add --local branch.main.vscode-merge-base origin/main [4ms]
+2025-11-29 17:05:23.728 [info] > git symbolic-ref --short HEAD [10ms]
+2025-11-29 17:05:23.735 [info] > git config --get commit.template [8ms]
+2025-11-29 17:05:23.737 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-11-29 17:05:23.745 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ali/myarchiso/dots-hyprland/.git/refs/remotes/origin/main'
+2025-11-29 17:05:23.747 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-11-29 17:05:23.765 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-11-29 17:05:23.799 [info] > git status -z -uall [45ms]
+2025-11-29 17:05:23.837 [info] > git merge-base refs/heads/main refs/remotes/origin/main [4ms]
+2025-11-29 17:05:23.848 [info] > git merge-base refs/heads/main refs/remotes/origin/main [24ms]
+2025-11-29 17:05:23.859 [info] > git diff --name-status -z --diff-filter=ADMR --find-renames=50% 677fa06b06934174109e00206b2661ed2d686468...refs/remotes/origin/main -- [12ms]
+2025-11-29 17:05:23.862 [info] > git diff --name-status -z --diff-filter=ADMR --find-renames=50% 677fa06b06934174109e00206b2661ed2d686468...refs/remotes/origin/main -- [5ms]
+2025-11-29 17:05:24.317 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-29 17:06:46.328 [info] > git check-ignore -v -z --stdin [4ms]
+2025-11-29 17:06:48.994 [info] > git show --textconv :setup [30ms]
+2025-11-29 17:06:48.998 [info] > git ls-files --stage -- setup [10ms]
+2025-11-29 17:06:49.023 [info] > git cat-file -s 8a6e2d82f65340ff200f3a91f01e2b3ae3146193 [6ms]

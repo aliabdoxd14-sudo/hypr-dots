@@ -1,0 +1,59 @@
+# ╔═══════════════════════════════════════════════════════╗
+# ║          CAVA CONFIGURATION - BLUE THEME              ║
+# ║              Audio Spectrum Analyzer                  ║
+# ╚═══════════════════════════════════════════════════════╝
+
+; Framerate
+framerate = 60
+
+; Height of the bars (in number of characters)
+height = 30
+
+; Audio source
+audio.source = auto
+audio.raw_target = /dev/null
+audio.channels = stereo
+
+; Scaling method
+scaling.method = max
+scaling.window.type = hann
+scaling.window.size = 2
+
+; Frequency scale
+frequency.range = 20-20000
+frequency.scale = log
+frequency.ratio = 2
+
+; Smoothing / noise reduction
+smoothing.waves = 0
+smoothing.noise = 0.77
+smoothing.gravity = 8
+
+; Alignment
+alignment = center
+
+; Character used for drawing
+characters.bar = ▁▂▃▄▅▆▇█
+characters.ticks = "|"
+characters.margin = ""
+
+; Bar colors (Blue Theme)
+color.foreground = #0088ff
+color.background = #050510
+color.focus = #00d9ff
+
+; Gradient colors
+gradient = 1
+gradient.color.1 = #0055aa
+gradient.color.2 = #0088ff
+gradient.color.3 = #00aaff
+gradient.color.4 = #00d9ff
+gradient.color.5 = #00aaff
+gradient.color.6 = #0088ff
+gradient.color.7 = #0055aa
+gradient.color.8 = #003377
+
+; Terminal settings
+terminal.font = Noto Mono
+terminal.width = 200
+terminal.height = 50

@@ -1,0 +1,46 @@
+{
+  "name": "illogical-impulse-inspired",
+  "author": "generated-by-copilot",
+  "description": "Dark deep-blue theme inspired by 'illogical-impulse' — high contrast blues with cyan accents.",
+  "palette": {
+    "background": "#071428",
+    "foreground": "#D7E7FF",
+    "primary": "#0B3B6F",
+    "accent": "#33C2FF",
+    "muted": "#56718B",
+    "success": "#6DE6A8",
+    "warning": "#FFC66D",
+    "error": "#FF7A7A"
+  },
+  "prompt": {
+    "user": {
+      "fg": "#D7E7FF",
+      "bg": "#0B3B6F",
+      "style": "bold"
+    },
+    "host": {
+      "fg": "#33C2FF",
+      "bg": "#071428",
+      "style": "normal"
+    },
+    "path": {
+      "fg": "#FFC66D",
+      "bg": "#071428",
+      "style": "normal"
+    },
+    "git": {
+      "fg": "#6DE6A8",
+      "bg": "#071428",
+      "style": "normal"
+    },
+    "symbol": {
+      "fg": "#33C2FF",
+      "bg": "#071428",
+      "style": "bold"
+    }
+  },
+  "extras": {
+    "cursor_color": "#33C2FF",
+    "selection_bg": "#0E2A46"
+  }
+}

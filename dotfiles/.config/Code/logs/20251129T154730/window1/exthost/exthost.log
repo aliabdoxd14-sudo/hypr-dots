@@ -1,0 +1,58 @@
+2025-11-29 15:47:49.716 [info] Extension host with pid 8593 started
+2025-11-29 15:47:49.716 [info] Skipping acquiring lock for /home/ali/.config/Code/User/workspaceStorage/3b9fc26981f2734bb4b1d5e1994b5e1e.
+2025-11-29 15:47:49.880 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-11-29 15:47:50.144 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-11-29 15:47:50.481 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onChatParticipant:github.copilot.editsAgent'
+2025-11-29 15:47:53.664 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-11-29 15:47:54.080 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2025-11-29 15:47:54.313 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-11-29 15:47:54.502 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-11-29 15:47:55.459 [info] Eager extensions activated
+2025-11-29 15:47:55.466 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-11-29 15:47:55.544 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-11-29 15:47:56.684 [error] Error: chatParticipant must be declared in package.json: claude-code
+    at QKt.$registerAgent (vscode-file://vscode-app/home/ali/Downloads/VSCode-linux-x64/resources/app/out/vs/workbench/workbench.desktop.main.js:511:6057)
+2025-11-29 15:48:19.008 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2025-11-29 15:48:20.455 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-11-29 15:48:20.638 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-11-29 15:48:20.963 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-11-29 15:48:35.756 [info] ExtensionService#_doActivateExtension zhuangtongfa.material-theme, startup: false, activationEvent: 'onStartupFinished'
+2025-11-29 15:49:20.432 [info] ExtensionService#_doActivateExtension monokai.theme-monokai-pro-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-11-29 15:50:15.102 [info] Extension host terminating: renderer closed the MessagePort
+2025-11-29 15:50:15.233 [info] Extension host with pid 8593 exiting with code 0
+2025-11-29 15:50:19.710 [info] Extension host with pid 9348 started
+2025-11-29 15:50:19.710 [info] Skipping acquiring lock for /home/ali/.config/Code/User/workspaceStorage/494557017c301e75664f08151c5eba55.
+2025-11-29 15:50:19.856 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-11-29 15:50:19.975 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-11-29 15:50:20.338 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2025-11-29 15:50:20.393 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-11-29 15:50:20.689 [info] Eager extensions activated
+2025-11-29 15:50:20.698 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-11-29 15:50:20.769 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-11-29 15:50:20.824 [info] ExtensionService#_doActivateExtension monokai.theme-monokai-pro-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-11-29 15:50:20.831 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2025-11-29 15:50:20.853 [info] ExtensionService#_doActivateExtension zhuangtongfa.material-theme, startup: false, activationEvent: 'onStartupFinished'
+2025-11-29 16:14:05.784 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2025-11-29 16:14:05.991 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onChatSession:copilotcli'
+2025-11-29 16:14:11.171 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2025-11-29 16:14:12.389 [error] Error: chatParticipant must be declared in package.json: claude-code
+    at QKt.$registerAgent (vscode-file://vscode-app/home/ali/Downloads/VSCode-linux-x64/resources/app/out/vs/workbench/workbench.desktop.main.js:511:6057)
+2025-11-29 16:19:18.025 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-11-29 16:19:18.112 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-11-29 17:05:10.343 [error] Error: e is not iterable
+
+TypeError: e is not iterable
+	at Tge.setItems (/home/ali/.vscode/extensions/github.copilot-chat-0.33.3/dist/extension.js:939:17211)
+	at lc._computeFn (/home/ali/.vscode/extensions/github.copilot-chat-0.33.3/dist/extension.js:939:16942)
+	at lc._recompute (/home/ali/.vscode/extensions/github.copilot-chat-0.33.3/dist/extension.js:939:9190)
+	at lc.get (/home/ali/.vscode/extensions/github.copilot-chat-0.33.3/dist/extension.js:939:8524)
+	at lc.reportChanges (/home/ali/.vscode/extensions/github.copilot-chat-0.33.3/dist/extension.js:939:496)
+	at Sge.endUpdate (/home/ali/.vscode/extensions/github.copilot-chat-0.33.3/dist/extension.js:939:16724)
+	at $_t (/home/ali/.vscode/extensions/github.copilot-chat-0.33.3/dist/extension.js:939:16442)
+	at lc.recomputeInitiallyAndOnChange (/home/ali/.vscode/extensions/github.copilot-chat-0.33.3/dist/extension.js:939:1090)
+	at MP.init (/home/ali/.vscode/extensions/github.copilot-chat-0.33.3/dist/extension.js:4224:1822)
+	at Timeout._onTimeout (/home/ali/.vscode/extensions/github.copilot-chat-0.33.3/dist/extension.js:902:12)
+	at listOnTimeout (node:internal/timers:588:17)
+	at process.processTimers (node:internal/timers:523:7)
+2025-11-29 17:07:15.105 [info] Extension host terminating: renderer closed the MessagePort
+2025-11-29 17:07:15.396 [info] Extension host with pid 9348 exiting with code 0

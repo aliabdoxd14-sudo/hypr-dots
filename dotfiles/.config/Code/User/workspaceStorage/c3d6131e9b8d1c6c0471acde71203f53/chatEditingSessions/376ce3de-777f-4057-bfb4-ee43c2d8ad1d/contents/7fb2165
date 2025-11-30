@@ -1,0 +1,86 @@
+/* ╔════════════════════════════════════════════════════════╗
+   ║        ROFI POWERMENU THEME - BLUE WITH BLUR           ║
+   ╚════════════════════════════════════════════════════════╝ */
+
+* {
+    bg0: #050510;
+    bg1: #0a0a15;
+    bg3: #1a1a2e;
+    
+    fg0: #e0e6ff;
+    fg1: #00d9ff;
+    fg3: #0055aa;
+    
+    accent: #0088ff;
+    accent-light: #00d9ff;
+    
+    border-color: #0066cc;
+}
+
+window {
+    location: center;
+    anchor: center;
+    fullscreen: false;
+    transparency: "real";
+    width: 400px;
+    height: 300px;
+    
+    background-color: rgba(5, 5, 16, 0.95);
+    border: 2px solid @border-color;
+    border-radius: 12px;
+    
+    font: "JetBrains Mono 14";
+}
+
+mainbox {
+    background-color: transparent;
+    children: [ inputbar, listview ];
+    spacing: 20px;
+    padding: 30px;
+}
+
+inputbar {
+    enabled: false;
+}
+
+listview {
+    enabled: true;
+    columns: 2;
+    lines: 2;
+    spacing: 15px;
+}
+
+element {
+    padding: 20px 15px;
+    spacing: 12px;
+    background-color: rgba(0, 136, 255, 0.1);
+    text-color: @fg0;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: 200ms ease-in-out;
+}
+
+element:hover {
+    background-color: rgba(0, 136, 255, 0.25);
+    text-color: @accent-light;
+    border: 2px solid @accent;
+    box-shadow: 0 0 15px rgba(0, 136, 255, 0.4);
+}
+
+element:selected {
+    background: linear-gradient(135deg, @accent, #0055aa);
+    text-color: #ffffff;
+    border: 2px solid @accent-light;
+}
+
+element-icon {
+    size: 48px;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+element-text {
+    expand: true;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}

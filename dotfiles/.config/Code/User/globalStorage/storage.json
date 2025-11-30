@@ -1,0 +1,103 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "4445c2aa9e94bd49c1f4f4625da9a7c4799c121d9aea94c63af6ac945362dd96",
+    "telemetry.devDeviceId": "dab1f742-4919-4b86-ae9b-0a32f3b6c199",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/ali/.config/waybar"
+            },
+            {
+                "folderUri": "file:///home/ali/myarchiso"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/ali/.config/quickshell": "__default__profile__",
+            "file:///home/ali/.config/chromium": "__default__profile__",
+            "file:///home/ali/example%20config": "__default__profile__",
+            "file:///home/ali/.config/waybar": "__default__profile__",
+            "file:///home/ali/myarchiso": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/ali/myarchiso",
+            "backupPath": "/home/ali/.config/Code/Backups/3a164df277f7fa1f88389f6d4b01e8ae",
+            "uiState": {
+                "mode": 1,
+                "x": 22,
+                "y": 56,
+                "width": 1876,
+                "height": 1002
+            }
+        },
+        "openedWindows": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#011627",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#d6deeb",
+            "background": "#011627",
+            "editorBackground": "#011627",
+            "titleBarBackground": "#011627",
+            "activityBarBackground": "#011627",
+            "activityBarBorder": "#011627",
+            "sideBarBackground": "#011627",
+            "sideBarBorder": "#011627",
+            "statusBarBackground": "#011627",
+            "statusBarBorder": "#262a39",
+            "statusBarNoFolderBackground": "#011627"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 232,
+            "auxiliaryBarWidth": 232,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 232,
+            "auxiliaryBarWidth": 232,
+            "workspaces": {
+                "c63267a1889bc0095d775a5f9b07768d": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "afa971e7baace9be0c1c6a72e5388830": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "c3d6131e9b8d1c6c0471acde71203f53": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "7209748ac88c310b546ffd3674069e68": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "3b9fc26981f2734bb4b1d5e1994b5e1e": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "494557017c301e75664f08151c5eba55": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                }
+            }
+        }
+    }
+}

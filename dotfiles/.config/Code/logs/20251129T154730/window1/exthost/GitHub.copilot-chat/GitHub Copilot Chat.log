@@ -1,0 +1,79 @@
+2025-11-29 15:47:55.119 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-11-29 15:47:55.119 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-11-29 15:47:55.119 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-11-29 15:47:55.119 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-11-29 15:47:55.937 [info] Logged in as aliabdoxd14-sudo
+2025-11-29 15:47:55.948 [info] Using the Electron fetcher.
+2025-11-29 15:47:56.615 [error] Copilot extension not found
+2025-11-29 15:47:56.619 [warning] Copilot API is undefined, unable to register context provider.
+2025-11-29 15:47:56.879 [info] Got Copilot token for aliabdoxd14-sudo
+2025-11-29 15:47:56.879 [info] Copilot Chat: 0.33.3, VS Code: 1.106.3
+2025-11-29 15:47:56.911 [info] activationBlocker from 'languageModelAccess' took for 364ms
+2025-11-29 15:47:57.209 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-11-29 15:47:57.209 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-11-29 15:47:57.286 [info] Registering default platform agent...
+2025-11-29 15:47:57.291 [info] [code-referencing] Public code references are enabled.
+2025-11-29 15:47:57.291 [info] activationBlocker from 'conversationFeature' took for 782ms
+2025-11-29 15:47:57.876 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-11-29 15:47:58.357 [info] Fetched model metadata in 1156ms 0c900809-bcdd-4630-8b95-9c7e093edc03
+2025-11-29 15:47:58.375 [info] Latest entry: ccreq:latest.copilotmd
+2025-11-29 15:47:58.376 [info] ccreq:973679ca.copilotmd | markdown
+2025-11-29 15:48:04.296 [info] Refetch model metadata: Succeeded in 867ms 429055eb-4bc9-44a1-b11a-90694e1762d7 (0A3A:22EA29:28E39D:3AAB6A:692AEB83) using node-http with status 200.
+2025-11-29 15:48:05.114 [info] Refetch model metadata: Succeeded in 817ms 66c588f4-dc30-4f68-97cd-38b6e0c7fe57 (0A3D:2F9242:29B5EE:3B7A25:692AEB84) using electron-fetch with status 200.
+2025-11-29 15:48:05.976 [info] Refetch model metadata: Succeeded in 861ms 4835f2f3-ba5a-43e9-a716-1e8d0adcbd80 (228C:2924C7:271564:38E5E6:692AEB85) using node-fetch with status 200.
+2025-11-29 16:14:11.606 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-11-29 16:14:11.606 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-11-29 16:14:11.606 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-11-29 16:14:11.606 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-11-29 16:14:11.854 [info] Logged in as aliabdoxd14-sudo
+2025-11-29 16:14:11.865 [info] Using the Electron fetcher.
+2025-11-29 16:14:12.286 [error] Copilot extension not found
+2025-11-29 16:14:12.294 [warning] Copilot API is undefined, unable to register context provider.
+2025-11-29 16:14:12.874 [info] Got Copilot token for aliabdoxd14-sudo
+2025-11-29 16:14:12.874 [info] Copilot Chat: 0.33.3, VS Code: 1.106.3
+2025-11-29 16:14:12.918 [info] activationBlocker from 'languageModelAccess' took for 715ms
+2025-11-29 16:14:13.821 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-11-29 16:14:13.821 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-11-29 16:14:13.877 [info] Registering default platform agent...
+2025-11-29 16:14:13.883 [info] [code-referencing] Public code references are enabled.
+2025-11-29 16:14:13.883 [info] activationBlocker from 'conversationFeature' took for 1696ms
+2025-11-29 16:14:14.557 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-11-29 16:14:14.798 [info] Fetched model metadata in 979ms 26fee81f-dbae-463e-915e-ef3a84f11890
+2025-11-29 16:14:14.920 [info] Latest entry: ccreq:latest.copilotmd
+2025-11-29 16:14:14.922 [info] ccreq:bd5a1e2e.copilotmd | markdown
+2025-11-29 16:15:21.570 [info] ccreq:6c1e5804.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 28127ms | [panel/editAgent]
+2025-11-29 16:15:27.893 [info] ccreq:41bb357e.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 5335ms | [panel/editAgent]
+2025-11-29 16:15:33.207 [info] ccreq:79bb3688.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 5216ms | [panel/editAgent]
+2025-11-29 16:17:39.000 [info] ccreq:c52ef82c.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 19139ms | [panel/editAgent]
+2025-11-29 16:17:44.078 [info] ccreq:1db37995.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 4744ms | [panel/editAgent]
+2025-11-29 16:17:47.710 [info] ccreq:c8235169.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 3433ms | [panel/editAgent]
+2025-11-29 16:18:02.437 [info] ccreq:a81338d1.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 14492ms | [panel/editAgent]
+2025-11-29 16:18:11.088 [info] ccreq:e5b7764b.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 8345ms | [panel/editAgent]
+2025-11-29 16:18:15.490 [info] ccreq:d3823824.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 4140ms | [panel/editAgent]
+2025-11-29 16:18:50.168 [info] ccreq:68ab6ae5.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 34416ms | [panel/editAgent]
+2025-11-29 16:18:56.011 [info] ccreq:4811ce02.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 4337ms | [panel/editAgent]
+2025-11-29 16:19:00.190 [info] ccreq:b8de932f.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 3880ms | [panel/editAgent]
+2025-11-29 16:19:05.034 [info] ccreq:0bf619cd.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 4581ms | [panel/editAgent]
+2025-11-29 16:19:13.154 [info] ccreq:5b9029ab.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 7838ms | [panel/editAgent]
+2025-11-29 16:19:17.231 [info] ccreq:43740d12.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 3791ms | [panel/editAgent]
+2025-11-29 16:19:32.813 [info] ccreq:d20d01bc.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 15137ms | [panel/editAgent]
+2025-11-29 16:19:41.575 [info] message 0 returned. finish reason: [stop]
+2025-11-29 16:19:41.575 [info] request done: requestId: [187ceb6e-547a-46f8-9adf-2e4e610c9c07] model deployment ID: []
+2025-11-29 16:19:41.586 [info] ccreq:35893de6.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 8677ms | [healApplyPatch]
+2025-11-29 16:20:02.960 [info] ccreq:68f85900.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 21312ms | [panel/editAgent]
+2025-11-29 16:20:11.192 [info] ccreq:27c09707.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 7983ms | [panel/editAgent]
+2025-11-29 16:20:27.909 [info] ccreq:2e5dea82.copilotmd | success | gpt-5-mini -> capi-noe-ptuc-h200-ib-gpt-5-mini-2025-08-07 | 16535ms | [panel/editAgent]
+2025-11-29 16:20:28.737 [info] message 0 returned. finish reason: [stop]
+2025-11-29 16:20:28.737 [info] request done: requestId: [8f2342a6-545c-491d-aaaa-38e9ef1314b4] model deployment ID: []
+2025-11-29 16:20:28.738 [info] ccreq:6201322b.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 732ms | [title]
+2025-11-29 17:03:33.620 [info] Logged in as aliabdoxd14-sudo
+2025-11-29 17:03:34.775 [info] Got Copilot token for aliabdoxd14-sudo
+2025-11-29 17:03:34.775 [info] Copilot Chat: 0.33.3, VS Code: 1.106.3
+2025-11-29 17:03:34.874 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-11-29 17:03:34.874 [info] [code-referencing] Public code references are enabled.
+2025-11-29 17:03:35.623 [info] Fetched model metadata in 2200ms 27c67024-964b-43e1-900f-ab360ecd21cd
+2025-11-29 17:03:35.746 [info] ccreq:e74a67f6.copilotmd | markdown
+2025-11-29 17:03:51.127 [info] ccreq:4ec00615.copilotmd | success | gpt-5-mini -> gpt-5-mini-2025-08-07 | 13645ms | [panel/editAgent]
+2025-11-29 17:04:08.719 [info] ccreq:564952d8.copilotmd | success | gpt-5-mini -> gpt-5-mini-2025-08-07 | 17216ms | [panel/editAgent]
+2025-11-29 17:06:31.041 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-11-29 17:06:31.041 [warning] GitHub.vscode-pull-request-github extension API is not available.

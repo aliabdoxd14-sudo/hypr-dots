@@ -1,0 +1,30 @@
+# ╔═══════════════════════════════════════════════════════╗
+# ║    GTK/Qt THEME CONFIGURATION FILE (GSettings)         ║
+# ║              Visual Consistency Settings               ║
+# ╚═══════════════════════════════════════════════════════╝
+
+# This file documents recommended GTK and Qt settings
+# Apply with: gsettings set org.gnome.desktop.interface ...
+
+[org.gnome.desktop.interface]
+gtk-theme = 'Adwaita'
+icon-theme = 'Papirus-Dark'
+cursor-theme = 'Bibata-Modern-Ice'
+cursor-size = 24
+font-name = 'Noto Sans 11'
+monospace-font-name = 'JetBrains Mono 11'
+document-font-name = 'Noto Sans 11'
+
+# Color scheme
+gtk-application-prefer-dark-theme = true
+color-scheme = 'prefer-dark'
+
+[org.gnome.desktop.sound]
+theme-name = 'freedesktop'
+
+# Qt Configuration
+[~/.config/qt6ct.conf]
+style=kvantum-dark
+icon_theme=Papirus-Dark
+font=JetBrains Mono,11,-1,5,50,0,0,0,0,0
+monospace_font=JetBrains Mono,11,-1,5,50,0,0,0,0,0

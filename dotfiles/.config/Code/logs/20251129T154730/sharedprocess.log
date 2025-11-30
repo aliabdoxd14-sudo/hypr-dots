@@ -1,0 +1,42 @@
+2025-11-29 15:48:07.637 [info] Getting Manifest... pkief.material-icon-theme
+2025-11-29 15:48:07.980 [info] Installing extension: pkief.material-icon-theme {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/ali/.vscode/extensions/extensions.json","path":"/home/ali/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"productVersion":{"version":"1.106.3","date":"2025-11-25T22:28:18.024Z"}}
+2025-11-29 15:48:15.547 [info] Extension signature verification result for pkief.material-icon-theme: Success. Internal Code: 0. Executed: true. Duration: 4374ms.
+2025-11-29 15:48:18.013 [info] Extracted extension to file:///home/ali/.vscode/extensions/pkief.material-icon-theme-5.29.0: pkief.material-icon-theme
+2025-11-29 15:48:18.180 [info] Renamed to /home/ali/.vscode/extensions/pkief.material-icon-theme-5.29.0
+2025-11-29 15:48:18.322 [info] Extension installed successfully: pkief.material-icon-theme vscode-userdata:/home/ali/.vscode/extensions/extensions.json
+2025-11-29 15:48:29.088 [info] Getting Manifest... zhuangtongfa.material-theme
+2025-11-29 15:48:29.529 [info] Installing extension: zhuangtongfa.material-theme {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/ali/.vscode/extensions/extensions.json","path":"/home/ali/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"productVersion":{"version":"1.106.3","date":"2025-11-25T22:28:18.024Z"}}
+2025-11-29 15:48:34.577 [info] Extension signature verification result for zhuangtongfa.material-theme: Success. Internal Code: 0. Executed: true. Duration: 3567ms.
+2025-11-29 15:48:34.858 [info] Extracted extension to file:///home/ali/.vscode/extensions/zhuangtongfa.material-theme-3.19.0: zhuangtongfa.material-theme
+2025-11-29 15:48:34.942 [info] Renamed to /home/ali/.vscode/extensions/zhuangtongfa.material-theme-3.19.0
+2025-11-29 15:48:35.094 [info] Extension installed successfully: zhuangtongfa.material-theme vscode-userdata:/home/ali/.vscode/extensions/extensions.json
+2025-11-29 15:48:47.250 [info] Getting Manifest... dracula-theme.theme-dracula
+2025-11-29 15:48:47.806 [info] Installing extension: dracula-theme.theme-dracula {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/ali/.vscode/extensions/extensions.json","path":"/home/ali/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"productVersion":{"version":"1.106.3","date":"2025-11-25T22:28:18.024Z"}}
+2025-11-29 15:48:52.243 [info] Extension signature verification result for dracula-theme.theme-dracula: Success. Internal Code: 0. Executed: true. Duration: 3153ms.
+2025-11-29 15:48:52.334 [info] Extracted extension to file:///home/ali/.vscode/extensions/dracula-theme.theme-dracula-2.25.1: dracula-theme.theme-dracula
+2025-11-29 15:48:52.411 [info] Renamed to /home/ali/.vscode/extensions/dracula-theme.theme-dracula-2.25.1
+2025-11-29 15:48:52.580 [info] Extension installed successfully: dracula-theme.theme-dracula vscode-userdata:/home/ali/.vscode/extensions/extensions.json
+2025-11-29 15:48:55.648 [info] Getting Manifest... akamud.vscode-theme-onedark
+2025-11-29 15:48:56.040 [info] Installing extension: akamud.vscode-theme-onedark {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/ali/.vscode/extensions/extensions.json","path":"/home/ali/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"productVersion":{"version":"1.106.3","date":"2025-11-25T22:28:18.024Z"}}
+2025-11-29 15:49:00.465 [info] Extension signature verification result for akamud.vscode-theme-onedark: Success. Internal Code: 0. Executed: true. Duration: 2715ms.
+2025-11-29 15:49:00.529 [info] Extracted extension to file:///home/ali/.vscode/extensions/akamud.vscode-theme-onedark-2.3.0: akamud.vscode-theme-onedark
+2025-11-29 15:49:00.604 [info] Renamed to /home/ali/.vscode/extensions/akamud.vscode-theme-onedark-2.3.0
+2025-11-29 15:49:00.756 [info] Extension installed successfully: akamud.vscode-theme-onedark vscode-userdata:/home/ali/.vscode/extensions/extensions.json
+2025-11-29 15:49:14.804 [info] Getting Manifest... monokai.theme-monokai-pro-vscode
+2025-11-29 15:49:15.105 [info] Installing extension: monokai.theme-monokai-pro-vscode {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/ali/.vscode/extensions/extensions.json","path":"/home/ali/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"productVersion":{"version":"1.106.3","date":"2025-11-25T22:28:18.024Z"}}
+2025-11-29 15:49:18.802 [info] Extension signature verification result for monokai.theme-monokai-pro-vscode: Success. Internal Code: 0. Executed: true. Duration: 1803ms.
+2025-11-29 15:49:18.901 [info] Extracted extension to file:///home/ali/.vscode/extensions/monokai.theme-monokai-pro-vscode-2.0.10: monokai.theme-monokai-pro-vscode
+2025-11-29 15:49:18.986 [info] Renamed to /home/ali/.vscode/extensions/monokai.theme-monokai-pro-vscode-2.0.10
+2025-11-29 15:49:19.144 [info] Extension installed successfully: monokai.theme-monokai-pro-vscode vscode-userdata:/home/ali/.vscode/extensions/extensions.json
+2025-11-29 15:49:35.810 [info] Getting Manifest... johnpapa.winteriscoming
+2025-11-29 15:49:36.124 [info] Installing extension: johnpapa.winteriscoming {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/ali/.vscode/extensions/extensions.json","path":"/home/ali/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"productVersion":{"version":"1.106.3","date":"2025-11-25T22:28:18.024Z"}}
+2025-11-29 15:49:41.758 [info] Extension signature verification result for johnpapa.winteriscoming: Success. Internal Code: 0. Executed: true. Duration: 3032ms.
+2025-11-29 15:49:41.941 [info] Extracted extension to file:///home/ali/.vscode/extensions/johnpapa.winteriscoming-1.4.4: johnpapa.winteriscoming
+2025-11-29 15:49:42.054 [info] Renamed to /home/ali/.vscode/extensions/johnpapa.winteriscoming-1.4.4
+2025-11-29 15:49:42.230 [info] Extension installed successfully: johnpapa.winteriscoming vscode-userdata:/home/ali/.vscode/extensions/extensions.json
+2025-11-29 15:49:49.047 [info] Getting Manifest... sdras.night-owl
+2025-11-29 15:49:49.437 [info] Installing extension: sdras.night-owl {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/ali/.vscode/extensions/extensions.json","path":"/home/ali/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"productVersion":{"version":"1.106.3","date":"2025-11-25T22:28:18.024Z"}}
+2025-11-29 15:49:53.750 [info] Extension signature verification result for sdras.night-owl: Success. Internal Code: 0. Executed: true. Duration: 2288ms.
+2025-11-29 15:49:53.915 [info] Extracted extension to file:///home/ali/.vscode/extensions/sdras.night-owl-2.1.1: sdras.night-owl
+2025-11-29 15:49:53.998 [info] Renamed to /home/ali/.vscode/extensions/sdras.night-owl-2.1.1
+2025-11-29 15:49:54.145 [info] Extension installed successfully: sdras.night-owl vscode-userdata:/home/ali/.vscode/extensions/extensions.json

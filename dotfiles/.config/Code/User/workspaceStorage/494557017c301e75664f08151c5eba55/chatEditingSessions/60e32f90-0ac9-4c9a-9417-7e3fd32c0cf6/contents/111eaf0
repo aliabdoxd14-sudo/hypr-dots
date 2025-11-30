@@ -1,0 +1,23 @@
+# Minimal pacman.conf for the live environment and installed systems to use
+# This file is intended to live inside the ISO's airootfs and be copied into
+# installed systems by the installer. It enables a local file-backed repo
+# named "hyprland_iso" which points to a directory on the ISO that will
+# contain all required .pkg.tar.zst files and the repo db.
+
+[options]
+HoldPkg     = pacman glibc
+Architecture = auto
+
+[core]
+Include = /etc/pacman.d/mirrorlist
+
+[extra]
+Include = /etc/pacman.d/mirrorlist
+
+[community]
+Include = /etc/pacman.d/mirrorlist
+
+# Local repository stored on the ISO root at /hyprland_repo
+[hyprland_iso]
+Server = file:///hyprland_repo
+SigLevel = Optional TrustAll

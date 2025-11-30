@@ -1,0 +1,65 @@
+# Core system
+base
+linux
+linux-firmware
+
+# Bootloader & partitioning
+grub
+efibootmgr
+dosfstools
+e2fsprogs
+
+# Networking
+networkmanager
+network-manager-applet
+nm-connection-editor
+wpa_supplicant
+openssh
+
+# Utilities
+sudo
+dialog
+bash-completion
+base-devel
+polkit
+elogind
+dbus
+pam
+
+# Wayland & Hyprland stack
+wayland
+wayland-protocols
+wlroots
+hyprland
+hyprpaper
+xdg-desktop-portal
+xdg-desktop-portal-wlr
+
+# Audio
+pipewire
+pipewire-alsa
+pipewire-pulse
+wireplumber
+alsa-utils
+
+# Clipboard / screenshots / launcher / notifications
+wl-clipboard
+grim
+slurp
+mako
+wofi
+
+# Terminals and tools
+kitty
+foot
+
+# Fonts (used by end-4 dotfiles)
+ttf-jetbrains-mono
+ttf-font-awesome
+noto-fonts
+
+# Additional niceties
+xdg-utils
+polkit-gnome
+ntfs-3g
+mkinitcpio

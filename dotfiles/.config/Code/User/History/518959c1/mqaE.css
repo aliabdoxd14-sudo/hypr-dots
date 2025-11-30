@@ -1,0 +1,152 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono Nerd Font", "Iosevka Nerd Font", "Fira Code", sans-serif;
+    font-size: 11px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: linear-gradient(90deg, rgba(30, 30, 46, 0.9) 0%, rgba(40, 40, 60, 0.9) 100%);
+    color: #cdd6f4;
+    border-bottom: none;
+    border-radius: 14px;
+    margin: 6px 6px 0px 6px;
+    border: 1px solid rgba(137, 180, 250, 0.15);
+    box-shadow: 
+        0 8px 20px 0 rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05),
+        0 0 30px rgba(137, 180, 250, 0.08);
+}
+
+/* Application launcher */
+#custom-launcher {
+    padding: 0 12px;
+    margin: 0 8px 0 12px;
+    background: rgba(137, 180, 250, 0.1);
+    color: #89b4fa;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#custom-launcher:hover {
+    background: rgba(137, 180, 250, 0.2);
+    color: #bfe1ff;
+}
+
+/* Workspaces */
+#workspaces {
+    background: transparent;
+    padding: 0 8px;
+}
+
+#workspaces button {
+    padding: 4px 10px;
+    background: transparent;
+    color: #6c7086;
+    margin: 0 3px;
+    transition: all 0.25s ease;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+#workspaces button.focused {
+    background: rgba(137, 180, 250, 0.15);
+    color: #89b4fa;
+    box-shadow: 0 0 8px rgba(137, 180, 250, 0.2);
+}
+
+#workspaces button:hover {
+    background: rgba(137, 180, 250, 0.08);
+    color: #a6c7f0;
+}
+
+/* All modules */
+#clock, #cpu, #memory, #battery, #pulseaudio, #tray {
+    padding: 4px 12px;
+    margin: 0 4px;
+    background: rgba(45, 45, 70, 0.4);
+    color: #cdd6f4;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+#clock {
+    color: #89b4fa;
+    font-weight: bold;
+    background: rgba(137, 180, 250, 0.1);
+    padding: 4px 14px;
+}
+
+#clock:hover {
+    background: rgba(137, 180, 250, 0.18);
+}
+
+#cpu {
+    color: #f38ba8;
+}
+
+#cpu:hover {
+    background: rgba(243, 139, 168, 0.08);
+    color: #f5c2e7;
+}
+
+#memory {
+    color: #f9e2af;
+}
+
+#memory:hover {
+    background: rgba(249, 226, 175, 0.08);
+    color: #fae3b0;
+}
+
+#battery {
+    color: #cba6f7;
+}
+
+#battery:hover {
+    background: rgba(203, 166, 247, 0.08);
+    color: #e5c2f0;
+}
+
+#battery.charging {
+    color: #a6e3a1;
+    background: rgba(166, 227, 161, 0.08);
+}
+
+#battery.warning:not(.charging) {
+    color: #f9e2af;
+    background: rgba(249, 226, 175, 0.08);
+}
+
+#battery.critical:not(.charging) {
+    color: #f38ba8;
+    background: rgba(243, 139, 168, 0.12);
+    animation: blink 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        color: #ff7a9f;
+    }
+}
+
+#pulseaudio {
+    color: #94e2d5;
+}
+
+#pulseaudio:hover {
+    background: rgba(148, 226, 213, 0.08);
+    color: #b5eef5;
+}
+
+#pulseaudio.muted {
+    color: #f38ba8;
+    background: rgba(243, 139, 168, 0.08);
+}
+
+#tray {
+    background: transparent;
+    margin-right: 8px;
+}

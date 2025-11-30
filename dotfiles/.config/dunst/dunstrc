@@ -1,0 +1,51 @@
+# Positioning and Geometry
+geometry = "420x70-50+65"
+pad_h = 12
+pad_v = 12
+
+# Appearance
+font = monospace 11
+corner_radius = 14
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+
+# Behavior
+indicate_startup_suitability = yes
+browser = firefox
+follow = keyboard
+width = 420
+height = 70
+shrink = yes
+padding = 12
+horizontal_padding = 12
+gapsize = 6
+separator_height = 2
+separator_color = auto
+sort = yes
+idle_threshold = 120
+markup = full
+format = "%s"
+
+# Show close button (the little X)
+show_indicators = yes
+close_on_click = yes
+mouse_left_click = close_current
+mouse_middle_click = do_action
+mouse_right_click = close_all
+
+# Per-urgency level colors
+[urgency_low]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+timeout = 10
+
+[urgency_normal]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+timeout = 10
+
+[urgency_critical]
+background = "#1e1e2e"
+foreground = "#f38ba8"
+timeout = 0
+

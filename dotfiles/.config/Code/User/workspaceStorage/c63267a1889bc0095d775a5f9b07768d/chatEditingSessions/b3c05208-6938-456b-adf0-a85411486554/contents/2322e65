@@ -1,0 +1,33 @@
+# Alacritty color scheme: Blue Hyperland
+colors:
+  primary:
+    background: '0x0b1220'
+    foreground: '0xcfe8ff'
+
+  normal:
+    black:   '0x0b1220'
+    red:     '0xff6b6b'
+    green:   '0x51cf66'
+    yellow:  '0xffd166'
+    blue:    '0x4da6ff'
+    magenta: '0xd699ff'
+    cyan:    '0x60e6ff'
+    white:   '0xcfe8ff'
+
+  bright:
+    black:   '0x1a2430'
+    red:     '0xff9b9b'
+    green:   '0x8bf59a'
+    yellow:  '0xffe89f'
+    blue:    '0x8fc9ff'
+    magenta: '0xe5c8ff'
+    cyan:    '0x9ff3ff'
+    white:   '0xffffff'
+
+  cursor:
+    text: '0x00111b'
+    cursor: '0x8fc9ff'
+
+  selection:
+    text: '0x00111b'
+    background: '0x3b4b60'

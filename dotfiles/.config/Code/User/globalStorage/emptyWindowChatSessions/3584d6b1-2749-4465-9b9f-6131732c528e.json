@@ -1,0 +1,134 @@
+{
+  "version": 3,
+  "requesterUsername": "aliabdoxd14-sudo",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/241908681",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_d38d9b3d-9201-4e40-9cef-24e8c70da482",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 2
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 3
+            },
+            "text": "ho",
+            "kind": "text"
+          }
+        ],
+        "text": "ho"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "kind": "mcpServersStarting",
+          "didStartServerIds": []
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Signing in to GitHub...",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "supportAlertSyntax": false
+          }
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Getting chat ready...",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "supportAlertSyntax": false
+          }
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Chat is almost ready...",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "supportAlertSyntax": false
+          }
+        },
+        {
+          "kind": "warning",
+          "content": {
+            "value": "Chat took too long to get ready. Please ensure you are signed in to GitHub and that the extension `GitHub.copilot-chat` is installed and enabled.",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "supportAlertSyntax": false
+          }
+        }
+      ],
+      "responseId": "response_d3e6a57a-7826-4eaa-adc6-d7ad8d698d57",
+      "result": {},
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "id": "setup.agent",
+        "name": "GitHub Copilot",
+        "isDefault": true,
+        "isCore": true,
+        "modes": [
+          "agent"
+        ],
+        "when": "config.chat.agent.enabled && !previewFeaturesDisabled",
+        "slashCommands": [],
+        "disambiguation": [],
+        "locations": [
+          "panel"
+        ],
+        "metadata": {
+          "helpTextPrefix": {
+            "value": "You need to set up GitHub Copilot and be signed in to use Chat.",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "supportAlertSyntax": false
+          },
+          "themeIcon": {
+            "id": "tools"
+          }
+        },
+        "description": "Describe what to build next",
+        "extensionId": {
+          "value": "nullExtensionDescription",
+          "_lower": "nullextensiondescription"
+        },
+        "extensionDisplayName": "Null Extension Description",
+        "extensionPublisherId": "vscode"
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1764316332988
+    }
+  ],
+  "sessionId": "3584d6b1-2749-4465-9b9f-6131732c528e",
+  "creationDate": 1764316308523,
+  "isImported": false,
+  "lastMessageDate": 1764316332988
+}

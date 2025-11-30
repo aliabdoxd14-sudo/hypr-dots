@@ -1,0 +1,89 @@
+# ╔═══════════════════════════════════════════════════════╗
+# ║       DUNST NOTIFICATION CONFIG - BLUE THEME          ║
+# ║                  Notification Daemon                  ║
+# ╚═══════════════════════════════════════════════════════╝
+
+[global]
+    # Display
+    monitor = 0
+    follow = mouse
+    geometry = "400x80-15+50"
+    progress_bar = true
+    progress_bar_height = 8
+    progress_bar_frame_width = 1
+    progress_bar_corner_radius = 4
+    indicate_hidden = yes
+    shrink = no
+    transparency = 25
+    separator_height = 2
+    padding = 12
+    horizontal_padding = 15
+    text_icon_padding = 12
+    frame_width = 2
+    frame_color = "#0088ff"
+    separator_color = "#0055aa"
+    sort = yes
+    idle_threshold = 120
+    font = "JetBrains Mono 11"
+    line_height = 0
+    markup = full
+    format = "<b>%s</b>\n%b"
+    alignment = center
+    vertical_alignment = center
+    show_age_threshold = 60
+    word_wrap = yes
+    ignore_newline = no
+    ignore_dbusclose = false
+    ellipsize = end
+    icon_position = left
+    max_icon_size = 48
+    icon_path = /usr/share/icons/Papirus-Dark:/usr/share/icons/hicolor/scalable/apps:/usr/share/pixmaps
+    sticky_history = yes
+    history_length = 20
+    dmenu = /usr/bin/dmenu -p dunst:
+    browser = /usr/bin/xdg-open
+    always_run_script = true
+    title = Dunst
+    class = Dunst
+    corner_radius = 8
+    min_icon_size = 16
+    enable_recursive_icon_lookup = true
+    force_xwayland = false
+    mouse_left_click = close_current
+    mouse_middle_click = do_action
+    mouse_right_click = close_all
+
+[urgency_low]
+    background = "#050510"
+    foreground = "#00a0ff"
+    timeout = 4
+    icon = dialog-information
+
+[urgency_normal]
+    background = "#0a0a15"
+    foreground = "#00d9ff"
+    timeout = 6
+    icon = dialog-information
+    frame_color = "#0088ff"
+
+[urgency_critical]
+    background = "#1a0a0a"
+    foreground = "#ff6464"
+    frame_color = "#ff6464"
+    timeout = 0
+    icon = dialog-warning
+
+# History
+[history-pop-down]
+    # Close the notification window with history pop down (which is currently not supported by the notification center)
+    close = history
+
+# Skip taskbar
+[skip-taskbar]
+    # Skip the notification on the taskbar
+    skip_taskbar = true
+
+# Settings for the center and right click
+[default]
+    new_notifications_center = true
+    close_on_click = true

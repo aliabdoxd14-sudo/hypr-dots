@@ -1,0 +1,71 @@
+# ╔═══════════════════════════════════════════════════════╗
+# ║    HYPRLAND APPLICATION-SPECIFIC WINDOW RULES          ║
+# ║            Include in hyprland.conf                    ║
+# ╚═══════════════════════════════════════════════════════╝
+
+# Firefox
+windowrulev2 = workspace 2, class:^(firefox)$
+windowrulev2 = size 100% 100%, class:^(firefox)$
+
+# Discord
+windowrulev2 = workspace 3, class:^(discord)$
+windowrulev2 = float, class:^(discord)$, title:^(Update available)$
+
+# Telegram
+windowrulev2 = workspace 3, class:^(TelegramDesktop)$
+windowrulev2 = float, class:^(TelegramDesktop)$, title:^(Telegram)$
+
+# Spotify
+windowrulev2 = workspace 4, class:^(spotify)$
+
+# System Tools
+windowrule = float, ^(pavucontrol)$
+windowrule = float, ^(nm-connection-editor)$
+windowrule = float, ^(blueberry.py)$
+windowrule = float, ^(wdisplays)$
+windowrule = float, ^(xfce4-power-manager-settings)$
+
+# File Manager
+windowrulev2 = workspace 5, class:^(nautilus|thunar|pcmanfm)$
+windowrulev2 = float, class:^(nautilus|thunar|pcmanfm)$, title:^(Confirm|Move Files|Copy Files)$
+windowrulev2 = size 70% 70%, class:^(nautilus|thunar|pcmanfm)$
+windowrulev2 = center, class:^(nautilus|thunar|pcmanfm)$
+
+# Code Editors
+windowrulev2 = workspace 1, class:^(code|codium|gedit)$
+windowrulev2 = maximize, class:^(code|codium|gedit)$
+
+# Media Players
+windowrulev2 = float, class:^(vlc|mpv)$
+windowrulev2 = size 50% 50%, class:^(vlc|mpv)$
+
+# Terminals
+windowrulev2 = float, class:^(kitty)$, title:^(floating_terminal)$
+windowrulev2 = size 50% 50%, class:^(kitty)$, title:^(floating_terminal)$
+windowrulev2 = center, class:^(kitty)$, title:^(floating_terminal)$
+
+# Games
+windowrulev2 = noanim, class:^(steam)$, title:^(Steam)$
+windowrulev2 = workspace 10, class:^(steam)$
+windowrulev2 = fullscreen, class:^(steam_app_)$
+
+# GIMP
+windowrulev2 = workspace 6, class:^(gimp-2.10|gimp)$
+windowrulev2 = float, class:^(gimp)$, title:^(GNU Image Manipulation Program)$
+
+# Dialogs
+windowrule = float, title:^(Save As|Save|Open|Delete)$
+windowrule = float, title:^(Confirm|Error|Warning)$
+windowrulev2 = center, floating:1
+
+# No animations for lock screen
+windowrule = noanim, ^(hyprlock)$
+windowrule = fullscreen, ^(hyprlock)$
+
+# Opacity rules
+windowrulev2 = opacity 0.9 0.7, class:^(kitty)$
+windowrulev2 = opacity 1.0, class:^(firefox)$
+windowrulev2 = opacity 0.95, class:^(discord)$
+
+# Blur rules
+windowrulev2 = dimaround, class:^(rofi)$

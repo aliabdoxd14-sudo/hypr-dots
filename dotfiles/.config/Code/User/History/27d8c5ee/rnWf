@@ -1,0 +1,83 @@
+// ╔════════════════════════════════════════════════════════╗
+// ║      WAYBAR CONFIGURATION - ADVANCED OPTIONS           ║
+// ║         Alternative modules and configurations         ║
+// ╚════════════════════════════════════════════════════════╝
+
+{
+    "layer": "top",
+    "position": "top",
+    "height": 35,
+    "margin-top": 6,
+    "margin-left": 12,
+    "margin-right": 12,
+    
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/window",
+        "custom/media"
+    ],
+    
+    "modules-center": ["clock"],
+    
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "battery",
+        "backlight",
+        "power-profiles-daemon",
+        "cpu",
+        "memory",
+        "temperature",
+        "tray"
+    ],
+
+    // CPU Module (optional)
+    "cpu": {
+        "interval": 2,
+        "format": "󰻠 {usage}%",
+        "states": {
+            "critical": 90,
+            "warning": 70
+        },
+        "tooltip": true,
+        "tooltip-format": "CPU: {usage}%\nCores: {icon0}{icon1}{icon2}{icon3}"
+    },
+
+    // Memory Module (optional)
+    "memory": {
+        "interval": 5,
+        "format": "󰍛 {used}GB/{total}GB",
+        "states": {
+            "critical": 90,
+            "warning": 70
+        }
+    },
+
+    // Temperature Module (optional)
+    "temperature": {
+        "thermal-zone": 0,
+        "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
+        "format": "󰔏 {temperatureC}°C",
+        "format-critical": "󰻗 {temperatureC}°C",
+        "critical-threshold": 80,
+        "interval": 5
+    },
+
+    // Custom Media Player Control
+    "custom/media": {
+        "format": "♪ {}",
+        "return-type": "json",
+        "max-length": 50,
+        "exec": "playerctl -p spotify metadata --format '{\"text\": \"{{artist}} - {{title}}\", \"class\": \"Playing\"}'",
+        "exec-if": "playerctl -l | grep spotify",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl volume 0.05+",
+        "on-scroll-down": "playerctl volume 0.05-"
+    },
+
+    // Custom Separator
+    "custom/separator": {
+        "format": "|",
+        "tooltip": false
+    }
+}

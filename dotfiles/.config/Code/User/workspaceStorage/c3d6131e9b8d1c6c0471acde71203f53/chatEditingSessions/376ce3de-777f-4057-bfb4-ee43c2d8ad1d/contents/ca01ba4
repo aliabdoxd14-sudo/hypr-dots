@@ -1,0 +1,41 @@
+# ╔═══════════════════════════════════════════════════════╗
+# ║       SWAY/HYPRLAND ENVIRONMENT VARIABLES              ║
+# ║              Setup & Initialization                   ║
+# ╚═══════════════════════════════════════════════════════╝
+
+# Source this file in your ~/.bashrc or ~/.zshrc or ~/.config/fish/config.fish
+
+export MOZ_ENABLE_WAYLAND=1
+export QT_QPA_PLATFORM=wayland
+export QT_QPA_PLATFORMTHEME=qt6ct
+export XDG_CURRENT_DESKTOP=Hyprland
+export XDG_SESSION_TYPE=wayland
+export LIBSEAT_BACKEND=logind
+
+# Cursor theme
+export XCURSOR_THEME=Bibata-Modern-Ice
+export XCURSOR_SIZE=24
+
+# GTK Theme
+export GTK_THEME=Adwaita:dark
+export GTK_CSD=1
+
+# Electron/Chromium
+export OZONE_PLATFORM=wayland
+
+# Java
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+# SSH
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
+
+# Locale
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LC_TIME=en_US.UTF-8
+
+# Default Applications
+export EDITOR=nano
+export VISUAL=nano
+export BROWSER=firefox
+export TERMINAL=kitty

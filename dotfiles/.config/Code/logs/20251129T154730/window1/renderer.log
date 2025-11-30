@@ -1,0 +1,39 @@
+2025-11-29 15:47:41.421 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-11-29 15:47:42.946 [info] Started local extension host with pid 8593.
+2025-11-29 15:47:50.373 [info] MCP Registry configured: https://api.mcp.github.com
+2025-11-29 15:47:50.577 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-11-29 15:47:53.216 [info] Extension host (LocalProcess pid: 8593) is unresponsive.
+2025-11-29 15:47:53.509 [error] [Extension Host] (node:8593) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-11-29 15:47:53.510 [error] [Extension Host] (node:8593) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+2025-11-29 15:47:53.512 [info] Extension host (LocalProcess pid: 8593) is responsive.
+2025-11-29 15:47:54.614 [info] [perf] Render performance baseline is 70ms
+2025-11-29 15:47:55.719 [error] Failed to fetch MCP registry providers Server returned 404
+2025-11-29 15:47:56.686 [error] chatParticipant must be declared in package.json: claude-code
+2025-11-29 15:50:17.018 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-11-29 15:50:17.453 [info] Started local extension host with pid 9348.
+2025-11-29 15:50:24.583 [info] MCP Registry configured: https://api.mcp.github.com
+2025-11-29 15:50:26.301 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-11-29 15:50:26.735 [info] [perf] Render performance baseline is 55ms
+2025-11-29 15:50:28.106 [error] Failed to fetch MCP registry providers Server returned 404
+2025-11-29 16:14:09.277 [info] Extension host (LocalProcess pid: 9348) is unresponsive.
+2025-11-29 16:14:09.436 [error] [Extension Host] (node:9348) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-11-29 16:14:09.439 [error] [Extension Host] (node:9348) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+2025-11-29 16:14:09.492 [info] Extension host (LocalProcess pid: 9348) is responsive.
+2025-11-29 16:14:09.497 [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+2025-11-29 16:14:10.855 [info] UNRESPONSIVE extension host: starting to profile NOW
+2025-11-29 16:14:12.392 [error] chatParticipant must be declared in package.json: claude-code
+2025-11-29 16:14:13.930 [warning] No extension contribution found for chat session type: copilot-cloud-agent
+2025-11-29 16:14:13.943 [warning] No extension contribution found for chat session type: copilot-cloud-agent
+2025-11-29 17:05:10.367 [error] An unknown error occurred. Please consult the log for more details.
+2025-11-29 17:07:15.333 [error] Error while handling chat request: Canceled: Canceled: Canceled
+    at d1 (vscode-file://vscode-app/home/ali/Downloads/VSCode-linux-x64/resources/app/out/vs/workbench/workbench.desktop.main.js:7:1282)
+    at vscode-file://vscode-app/home/ali/Downloads/VSCode-linux-x64/resources/app/out/vs/workbench/workbench.desktop.main.js:3869:37265
+    at Array.forEach (<anonymous>)
+    at kMt.dispose (vscode-file://vscode-app/home/ali/Downloads/VSCode-linux-x64/resources/app/out/vs/workbench/workbench.desktop.main.js:3869:37205)
+    at vPe.dispose (vscode-file://vscode-app/home/ali/Downloads/VSCode-linux-x64/resources/app/out/vs/workbench/workbench.desktop.main.js:3869:48882)
+    at Own.dispose (vscode-file://vscode-app/home/ali/Downloads/VSCode-linux-x64/resources/app/out/vs/workbench/workbench.desktop.main.js:3876:7731)
+    at Fwn.stopAllInReverse (vscode-file://vscode-app/home/ali/Downloads/VSCode-linux-x64/resources/app/out/vs/workbench/workbench.desktop.main.js:3876:7033)
+    at async tEt.tb (vscode-file://vscode-app/home/ali/Downloads/VSCode-linux-x64/resources/app/out/vs/workbench/workbench.desktop.main.js:3875:15950)
+2025-11-29 17:07:15.910 [warning] [lifecycle] onWillShutdown is taking a long time, pending operations: join.chatEditingSession

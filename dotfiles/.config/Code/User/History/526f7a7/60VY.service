@@ -1,0 +1,14 @@
+[Unit]
+Description=Hyprland live session autostart
+After=systemd-user-sessions.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=live
+Environment=DISPLAY=:0
+ExecStart=/usr/local/bin/start-hyprland.sh
+Restart=on-failure
+
+[Install]
+WantedBy=graphical.target

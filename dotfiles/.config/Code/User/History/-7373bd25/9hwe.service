@@ -1,0 +1,13 @@
+[Unit]
+Description=Launch Hyprland offline installer for live session (oneshot)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=live
+ExecStart=/usr/local/bin/hyprland-offline-installer
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
